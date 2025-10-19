@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "image_size": "large",
+            "show_image": true,
+            "show_tags": true,
+            "show_date": false,
+            "show_author": false,
+            "show_excerpt": false,
+            "show_share_facebook": false,
+            "show_share_twitter": false,
+            "show_share_pinterest": false,
+            "show_share_copy": false,
+            "enable_border_top_header": false,
+            "enable_border_bottom_header": false,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "article_footer": {
+          "type": "article-footer",
+          "settings": {
+            "footer_show_date": false,
+            "footer_show_author": false,
+            "footer_show_share_facebook": false,
+            "footer_show_share_twitter": false,
+            "footer_show_share_pinterest": false,
+            "footer_show_share_copy": false,
+            "enable_border_top": false,
+            "enable_border_bottom": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content",
+        "article_footer"
+      ],
+      "settings": {
+        "section_layout": "in_container",
+        "margin_top": 50,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

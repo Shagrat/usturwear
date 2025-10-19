@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collection_grid_TfAgLj": {
+      "type": "collection-grid",
+      "blocks": {
+        "categories_YKbrC8": {
+          "type": "categories",
+          "settings": {
+            "collection": "kurtki-anorakі-i-wiatrowki"
+          }
+        },
+        "categories_GHxWkt": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-jesien-wiosna-dla-mezczyzn"
+          }
+        },
+        "categories_hhDQHd": {
+          "type": "categories",
+          "settings": {
+            "collection": "swetry-bluzy-longsleeve-dla-mezczyzn"
+          }
+        },
+        "categories_j7pGqw": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszule-i-kimona-dla-mezczyzn"
+          }
+        },
+        "categories_XjQVPW": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn"
+          }
+        },
+        "categories_LcYMVT": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszulki-dla-mezczyzn"
+          }
+        }
+      },
+      "block_order": [
+        "categories_YKbrC8",
+        "categories_GHxWkt",
+        "categories_hhDQHd",
+        "categories_j7pGqw",
+        "categories_XjQVPW",
+        "categories_LcYMVT"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "GÓRA",
+        "button_label": "",
+        "button_link": "",
+        "per_row": 4,
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_grid_TfAgLj"
+  ]
+}

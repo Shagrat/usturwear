@@ -1,0 +1,298 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+	{% render 'spaced-section' %}
+	{% render 'spaced-section-inner' %}
+	#shopify-section-{{ section.id }} .image-banner {
+		--slide-overlay : rgba(var(--color-overlay), {{ section.settings.overlay_opacity }}%);
+	}
+{%- endstyle -%}
+
+{% liquid
+	case section.settings.image_size
+		when 'adapt'
+			assign section_size = 0
+		when 'small'
+			assign section_size = '300px'
+		when 'medium'
+			assign section_size = '600px'
+		when 'large'
+			assign section_size = '100vh'
+		else
+			assign section_size = '100vh'
+	endcase
+%}
+
+{% liquid
+	assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+	assign adapt_height = 1 | divided_by: section.settings.image.aspect_ratio | times: 100 | append: '%'
+	if section.settings.image_size == 'adapt'
+		assign section_size = adapt_height
+	endif
+%}
+
+{%- style -%}
+	#shopify-section-{{ section.id }} {
+		--image-height : {{ section_size }};
+	}
+{%- endstyle -%}
+
+<div class="color-inverse image-banner section-{{ section.id }}-padding {% if section.settings.overlay_enable %}have-overlay{% endif %}">
+	<div class="image-banner__img">
+		{%- if section.settings.image != blank -%}
+			{% assign image_height = section.settings.image.width
+				| divided_by: section.settings.image.aspect_ratio
+			%}
+			{{
+				section.settings.image
+				| image_url: width: 3840
+				| image_tag:
+					loading: 'lazy',
+					width: section.settings.image.width,
+					height: image_height,
+					sizes: '100vw',
+					widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+			}}
+		{%- endif -%}
+	</div>
+	<div class="container image-banner__wrapper">
+		<div class="image-banner__block">
+			{%- if section.settings.subheading != blank
+				or section.settings.heading != blank
+			-%}
+				<div class="image-banner__block-header">
+					{%- if section.settings.subheading != blank -%}
+						<div class="image-banner__block-header-subheading subtitle">
+							{{ section.settings.subheading }}
+						</div>
+					{%- endif -%}
+					{%- if section.settings.heading != blank -%}
+						<h2 class="image-with-description__block-heading">
+							{{ section.settings.heading }}
+						</h2>
+					{%- endif -%}
+				</div>
+			{%- endif -%}
+
+			<div class="image-banner__block-info">
+				{%- if section.settings.text != blank -%}
+					<div class="image-banner__block-info__text">
+						{{ section.settings.text }}
+					</div>
+				{%- endif -%}
+				<div class="image-banner-author__block">
+					{%- if section.settings.author_position != blank -%}
+						<div class="image-banner-author__position subtitle">
+							{{ section.settings.author_position }}
+						</div>
+					{%- endif -%}
+					{%- if section.settings.author_name != blank -%}
+						<div class="image-banner-author__name">
+							{{ section.settings.author_name }}
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+
+			{% if section.settings.button_label != blank %}
+				<div class="image-banner__button-wrapper">
+					{% render 'button', layout: section, icon: true %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "t:sections.image-banner.name",
+	"class": "image-banner-section spaced-section",
+	"tag": "section",
+	"enabled_on": {
+		"templates": ["*"],
+		"groups": ["footer"]
+	},
+	"settings": [
+		{
+			"type": "header",
+			"content": "t:sections.all.image.header.content"
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "t:sections.all.image.label"
+		},
+		{
+			"type": "select",
+			"id": "image_size",
+			"options": [
+				{
+					"value": "adapt",
+					"label": "t:sections.all.image.size.options__1.label"
+				},
+				{
+					"value": "small",
+					"label": "t:sections.all.image.size.options__2.label"
+				},
+				{
+					"value": "medium",
+					"label": "t:sections.all.image.size.options__3.label"
+				},
+				{
+					"value": "large",
+					"label": "t:sections.all.image.size.options__4.label"
+				}
+			],
+			"default": "medium",
+			"label": "t:sections.all.image.size.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.overlay.header.content"
+		},
+		{
+			"type": "checkbox",
+			"id": "overlay_enable",
+			"default": true,
+			"label": "t:sections.all.overlay.overlay_enable.label"
+		},
+		{
+			"type": "range",
+			"id": "overlay_opacity",
+			"min": 10,
+			"max": 90,
+			"default": 20,
+			"unit": "%",
+			"label": "t:sections.all.overlay.overlay_opacity.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.heading.header.content"
+		},
+		{
+			"type": "text",
+			"id": "subheading",
+			"default": "about us",
+			"label": "t:sections.all.subheading.label"
+		},
+		{
+			"type": "inline_richtext",
+			"id": "heading",
+			"default": "our mission",
+			"label": "t:sections.all.heading.label"
+		},
+		{
+			"type": "textarea",
+			"id": "text",
+			"default": "Nec non magna amet nisl mauris ipsum eget egestas. In auctor urna et erat ultricies porta sed. Leo nec nisi ultricies quam at massa. Leo nec nisi ultricies quam at massa.",
+			"label": "t:sections.all.text.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.author.header.content"
+		},
+		{
+			"type": "text",
+			"id": "author_position",
+			"default": "co-founder",
+			"label": "t:sections.all.author.author_position.label"
+		},
+		{
+			"type": "text",
+			"id": "author_name",
+			"default": "Jacob Smith",
+			"label": "t:sections.all.author.author_name.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.button.header.content"
+		},
+		{
+			"type": "text",
+			"id": "button_label",
+			"default": "Button label",
+			"label": "t:sections.all.button.label.label"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "t:sections.all.button.link.label"
+		},
+		{
+			"type": "select",
+			"id": "button_style",
+			"options": [
+				{
+					"value": "primary",
+					"label": "t:sections.all.button.style.options__1.label"
+				},
+				{
+					"value": "secondary",
+					"label": "t:sections.all.button.style.options__2.label"
+				}
+			],
+			"default": "primary",
+			"label": "t:sections.all.button.style.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "button_arrow",
+			"default": true,
+			"label": "t:sections.all.button.arrow.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.section_padding.header.content"
+		},
+		{
+			"type": "range",
+			"id": "padding_top",
+			"min": 0,
+			"max": 200,
+			"step": 10,
+			"default": 0,
+			"unit": "px",
+			"label": "t:sections.all.section_padding.padding_top.label"
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 10,
+			"default": 0,
+			"unit": "px",
+			"label": "t:sections.all.section_padding.padding_bottom.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.section_margin.header.content"
+		},
+		{
+			"type": "range",
+			"id": "margin_top",
+			"min": 0,
+			"max": 200,
+			"step": 10,
+			"default": 20,
+			"unit": "px",
+			"label": "t:sections.all.section_margin.margin_top.label"
+		},
+		{
+			"type": "range",
+			"id": "margin_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 10,
+			"default": 20,
+			"unit": "px",
+			"label": "t:sections.all.section_margin.margin_bottom.label"
+		}
+	],
+	"presets": [
+		{
+			"name": "t:sections.image-banner.name"
+		}
+	]
+}
+{% endschema %}

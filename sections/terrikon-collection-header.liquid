@@ -1,0 +1,29 @@
+{% comment %}
+  Terrikon Collection SEO H1 Section
+{% endcomment %}
+
+{% stylesheet %}
+  .collection-header h1 {
+    text-align: center;
+  }
+{% endstylesheet %}
+
+{%- if collection.metafields.custom.seo_h1 -%}
+<div class="collection-header">
+    <h1>
+        {{ collection.metafields.custom.seo_h1 }}
+    </h1>
+</div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Collection Header",
+    "presets": [
+      {
+        "name": "Collection Header",
+        "category": "Terrikon"
+      }
+    ]
+  }
+{% endschema %}

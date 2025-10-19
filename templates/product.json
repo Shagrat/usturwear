@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+            "enable_vendor_link": false
+          }
+        },
+        "judge_me_reviews_preview_badge_qfdDcF": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "title": {
+          "type": "heading",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description_EaNL6y": {
+          "type": "description",
+          "settings": {
+            "description_heading": "OPIS",
+            "default_open": true
+          }
+        },
+        "about_4JLRbP": {
+          "type": "about",
+          "settings": {
+            "about_heading": "Wysyłka, płatność i zwroty",
+            "about_heading_content": "<p>Płatność online – kartą lub PayPal<br/><br/>Wysyłka w 5–7 dni roboczych<br/><br/>Zwrot w ciągu 14 dni – produkt nieużywany, z metkami<br/><br/>Brak zwrotów: bielizna, rajstopy, stroje kąpielowe i inne artykuły osobiste<br/><br/>Gwarancja 30 dni<br/><br/>Aby dokonać zwrotu, napisz na <a href=\"/pages/kontakt\" title=\"Kontakt\"><strong>turwear.sales@gmail.com</strong></a>, podając numer zamówienia lub dane kontaktowe<br/><br/></p>",
+            "default_open": false
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "complementary": {
+          "type": "complementary",
+          "settings": {
+            "product_list_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "judge_me_reviews_preview_badge_qfdDcF",
+        "title",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "description_EaNL6y",
+        "about_4JLRbP",
+        "pickup_availability",
+        "complementary"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "image_gallery_collage": "thumbnail_carousel",
+        "mobile_image_gallery_collage": "thumbnail_carousel",
+        "show_thumbnail": true,
+        "image_fit": "cover",
+        "image_ratio": "adapt",
+        "show_share": true,
+        "show_share_facebook": true,
+        "show_share_twitter": true,
+        "show_share_pinterest": true,
+        "show_share_copy": true
+      }
+    },
+    "terrikon_product_details_xTqJT8": {
+      "type": "terrikon-product-details",
+      "name": "Product Details Slider",
+      "settings": {
+        "title": "Szczegóły"
+      }
+    },
+    "17534299122ac4e08d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_LFrnLa": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_LFrnLa"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "products_limit": 4,
+        "per_row": 3,
+        "mobile_card_count": false,
+        "subheading": "",
+        "heading": "Polecane produkty",
+        "button_label": "",
+        "button_link": "",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "terrikon_product_details_xTqJT8",
+    "17534299122ac4e08d",
+    "product-recommendations"
+  ]
+}

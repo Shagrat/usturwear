@@ -1,0 +1,175 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_3QKVjR": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow_item_K7Ckq7": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
+            "mobile_image": "shopify://shop_images/2_3cb36ed6-778d-4a06-ae01-5fa86b8d36bf.png",
+            "color_scheme": "dark",
+            "heading": "Darmowa dostawa",
+            "text": "<p>na wszystkie zamówienia</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "slideshow_item_rRaMXT": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Instagram_post_-_433_2.png",
+            "mobile_image": "shopify://shop_images/Instagram_story_-_233.webp",
+            "color_scheme": "dark",
+            "heading": "Dar samuraja: 1+1=3 ",
+            "text": "<p>na cały asortyment</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "overlay_enable": false,
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_item_K7Ckq7",
+        "slideshow_item_rRaMXT"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_layout": "full",
+        "image_size": "adapt",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": false,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "collection_grid_4rGHWH": {
+      "type": "collection-grid",
+      "blocks": {
+        "categories_nk3VKR": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-dla-kobiet"
+          }
+        },
+        "categories_fTDnPg": {
+          "type": "categories",
+          "settings": {
+            "collection": "bluzy-dla-kobiet"
+          }
+        },
+        "categories_mtahME": {
+          "type": "categories",
+          "settings": {
+            "collection": "body-dla-kobiet"
+          }
+        },
+        "categories_LBn4P9": {
+          "type": "categories",
+          "settings": {
+            "collection": "topy-i-longsleeve-dla-kobiet"
+          }
+        },
+        "categories_VwWtya": {
+          "type": "categories",
+          "settings": {
+            "collection": "spodnie-i-dzinsy-dla-kobiet"
+          }
+        },
+        "categories_XW7Mwk": {
+          "type": "categories",
+          "settings": {
+            "collection": "kimona-i-zestawy"
+          }
+        },
+        "categories_Rzc9n7": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszulki-dla-kobiet"
+          }
+        },
+        "categories_9c3fpY": {
+          "type": "categories",
+          "settings": {
+            "collection": "szorty-i-kolarki-dla-kobiet"
+          }
+        },
+        "categories_9He3tC": {
+          "type": "categories",
+          "settings": {
+            "collection": "sukienki-i-spodnice-dla-kobiet"
+          }
+        },
+        "categories_Nndt7c": {
+          "type": "categories",
+          "settings": {
+            "collection": "kominiarki-i-czapki-z-uszami"
+          }
+        }
+      },
+      "block_order": [
+        "categories_nk3VKR",
+        "categories_fTDnPg",
+        "categories_mtahME",
+        "categories_LBn4P9",
+        "categories_VwWtya",
+        "categories_XW7Mwk",
+        "categories_Rzc9n7",
+        "categories_9c3fpY",
+        "categories_9He3tC",
+        "categories_Nndt7c"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "Odzież damska",
+        "button_label": "",
+        "button_link": "",
+        "per_row": 4,
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_3QKVjR",
+    "collection_grid_4rGHWH"
+  ]
+}

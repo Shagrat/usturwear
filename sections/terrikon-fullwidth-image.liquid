@@ -1,0 +1,103 @@
+{% comment %}
+  Terrikon — Fullwidth Image Section
+  - section spans full browser width
+  - content image is centered and constrained to max-width: 1350px
+  - image always fully visible (no cropping): width:100%; height:auto;
+{% endcomment %}
+
+<section
+  id="terrikon-fullwidth-image-{{ section.id }}"
+  class="terrikon-fullwidth-image"
+  aria-label="{{ section.settings.label }}">
+  <div class="terrikon-fullwidth-image__inner">
+    {% if section.settings.image %}
+      <img
+        class="terrikon-fullwidth-image__img"
+        src="{{ section.settings.image | img_url: '2048x' }}"
+        srcset="
+          {{ section.settings.image | img_url: '600x' }} 600w,
+          {{ section.settings.image | img_url: '900x' }} 900w,
+          {{ section.settings.image | img_url: '1200x' }} 1200w,
+          {{ section.settings.image | img_url: '2048x' }} 2048w
+        "
+        sizes="(max-width: 599px) 100vw, (max-width: 1200px) 100vw, 1350px"
+        alt="{{ section.settings.alt_text | escape }}"
+        loading="lazy" />
+    {% endif %}
+  </div>
+</section>
+
+{% stylesheet %}
+  .terrikon-fullwidth-image {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+  }
+  .terrikon-fullwidth-image__inner {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* horizontal gutter */
+    box-sizing: border-box;
+    display: block;
+  }
+  .terrikon-fullwidth-image__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* ensure entire image visible */
+    max-width: 100%;
+    object-fit: contain;
+    /* safe-guard for supporting UAs */
+    border-radius: 0;
+  }
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Fullwidth Image",
+    "settings": [
+      {
+        "type": "text",
+        "id": "label",
+        "label": "Section label (accessibility)",
+        "default": "Fullwidth image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "alt_text",
+        "label": "Alt text",
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "label": "Top padding (px)",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "label": "Bottom padding (px)",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fullwidth Image",
+        "category": "Terrikon"
+      }
+    ]
+  }
+{% endschema %}

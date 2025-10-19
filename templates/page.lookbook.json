@@ -1,0 +1,65 @@
+{
+	"sections": {
+		"blockqoute": {
+			"type": "blockqoute",
+			"settings": {}
+		},
+		"popular-products": {
+			"type": "popular-products",
+			"settings": {}
+		},
+		"ticker": {
+			"type": "ticker",
+			"settings": {}
+		},
+		"multicolumn": {
+			"type": "multicolumn",
+			"blocks": {
+				"column-1": {
+					"type": "column",
+					"settings": {}
+				},
+				"column-2": {
+					"type": "column",
+					"settings": {}
+				},
+				"column-3": {
+					"type": "column",
+					"settings": {}
+				}
+			},
+			"block_order": ["column-1", "column-2", "column-3"],
+			"settings": {}
+		},
+		"instagram-collage": {
+			"type": "instagram-collage",
+			"blocks": {
+				"block_1": {
+					"type": "instagram-collage_image",
+					"settings": {}
+				},
+				"block_2": {
+					"type": "instagram-collage_image",
+					"settings": {}
+				},
+				"block_3": {
+					"type": "instagram-collage_image",
+					"settings": {}
+				},
+				"block_4": {
+					"type": "instagram-collage_image",
+					"settings": {}
+				}
+			},
+			"block_order": ["block_1", "block_2", "block_3", "block_4"],
+			"settings": {}
+		}
+	},
+	"order": [
+		"blockqoute",
+		"popular-products",
+		"ticker",
+		"multicolumn",
+		"instagram-collage"
+	]
+}

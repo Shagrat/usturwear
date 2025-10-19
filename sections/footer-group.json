@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo_width": 90,
+            "text": "",
+            "enable_border_left": false,
+            "enable_border_right": true
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Pomoc i informacje",
+            "menu": "footer"
+          }
+        },
+        "link_list_jbQfdT": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Kontakty",
+            "menu": "footer-menu-2"
+          }
+        },
+        "show_social_V8fYg7": {
+          "type": "show_social",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "footer-4": {
+          "type": "subscribe",
+          "settings": {
+            "heading": "<p>ZAPISZ SIĘ DO NEWSLETTERA</p>",
+            "newsletter_text": "<p>Otrzymuj informacje o nowościach i promocjach</p>",
+            "button_label": "ZAPISZ",
+            "button_style": "primary",
+            "button_arrow": true,
+            "enable_border_left": true,
+            "enable_border_right": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "link_list_jbQfdT",
+        "show_social_V8fYg7",
+        "footer-4"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "enable_follow_on_shop": false,
+        "payment_enable": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "show_policy": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "enable_border_top": true,
+        "enable_border_bottom": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_4dtiWH": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow_item_dXyctF": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
+            "mobile_image": "shopify://shop_images/2_3cb36ed6-778d-4a06-ae01-5fa86b8d36bf.png",
+            "color_scheme": "dark",
+            "heading": "Darmowa dostawa",
+            "text": "<p>na wszystkie zamówienia</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        },
+        "slideshow_item_KhaPiM": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Instagram_post_-_432_2.png",
+            "mobile_image": "shopify://shop_images/3_2_415ee7e9-854f-48b1-8aae-8e983dfdddc2.webp",
+            "color_scheme": "dark",
+            "heading": "Dar samuraja: 1+1=3",
+            "text": "<p><br/> na cały asortyment<br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_item_dXyctF",
+        "slideshow_item_KhaPiM"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_layout": "full",
+        "image_size": "adapt",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": false,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "collection_grid_TfAgLj": {
+      "type": "collection-grid",
+      "blocks": {
+        "categories_YKbrC8": {
+          "type": "categories",
+          "settings": {
+            "collection": "kurtki-anorakі-i-wiatrowki"
+          }
+        },
+        "categories_GHxWkt": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-jesien-wiosna-dla-mezczyzn"
+          }
+        },
+        "categories_hhDQHd": {
+          "type": "categories",
+          "settings": {
+            "collection": "swetry-bluzy-longsleeve-dla-mezczyzn"
+          }
+        },
+        "categories_zeVf4f": {
+          "type": "categories",
+          "settings": {
+            "collection": "spodnie-dla-mezczyzn"
+          }
+        },
+        "categories_j7pGqw": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszule-i-kimona-dla-mezczyzn"
+          }
+        },
+        "categories_rUiyQ7": {
+          "type": "categories",
+          "settings": {
+            "collection": "dzinsy-dla-mezczyzn"
+          }
+        },
+        "categories_rRJEMb": {
+          "type": "categories",
+          "settings": {
+            "collection": "spodnie-sportowe-dla-mezczyzn"
+          }
+        },
+        "categories_XjQVPW": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn"
+          }
+        },
+        "categories_hEhxVg": {
+          "type": "categories",
+          "settings": {
+            "collection": "bielizna-dla-mezczyzn"
+          }
+        },
+        "categories_GPjCCa": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszulki-dla-mezczyzn"
+          }
+        },
+        "categories_xt9NLW": {
+          "type": "categories",
+          "settings": {
+            "collection": "szorty-dla-mezczyzn"
+          }
+        },
+        "categories_LNC6ae": {
+          "type": "categories",
+          "settings": {
+            "collection": "obuwie-dla-mezczyzn"
+          }
+        },
+        "categories_YR8NBy": {
+          "type": "categories",
+          "settings": {
+            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami"
+          }
+        },
+        "categories_DjVWrY": {
+          "type": "categories",
+          "settings": {
+            "collection": "kapelusze-ta-czapki"
+          }
+        }
+      },
+      "block_order": [
+        "categories_YKbrC8",
+        "categories_GHxWkt",
+        "categories_hhDQHd",
+        "categories_zeVf4f",
+        "categories_j7pGqw",
+        "categories_rUiyQ7",
+        "categories_rRJEMb",
+        "categories_XjQVPW",
+        "categories_hEhxVg",
+        "categories_GPjCCa",
+        "categories_xt9NLW",
+        "categories_LNC6ae",
+        "categories_YR8NBy",
+        "categories_DjVWrY"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "Odzież męska",
+        "button_label": "",
+        "button_link": "",
+        "per_row": 4,
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_4dtiWH",
+    "collection_grid_TfAgLj"
+  ]
+}

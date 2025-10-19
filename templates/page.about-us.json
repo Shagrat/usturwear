@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_QBNmV4": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow_item_NbzmjG": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Frame-2-scaled.webp",
+            "mobile_image": "shopify://shop_images/Frame-2.png",
+            "color_scheme": "dark",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_item_NbzmjG"
+      ],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "section_layout": "full",
+        "image_size": "small",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_hero_kVYDMK": {
+      "type": "page-hero",
+      "custom_css": [
+        ".page-hero {max-width: 1350px; margin: 0 auto;}",
+        "h1 {font-size: 36px;}",
+        "@media (max-width: 768px) {h1 {font-size: 24px; }}"
+      ],
+      "name": "t:sections.page_hero.name",
+      "settings": {
+        "color_scheme": "color-background-1",
+        "layout": "full-width",
+        "order": "text-first",
+        "content_position": "center",
+        "subheading": "",
+        "heading": "Marka technologicznej odzieży <strong>TUR WEAR </strong>wita w świecie przyszłości i transformacji",
+        "object_fit": "cover",
+        "image_size": "large",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "176003215998b6c365": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c4f2e98_wYxnNT": {
+          "type": "ai_gen_block_c4f2e98",
+          "settings": {
+            "content": "<h2>PRZESŁANIE OD WŁAŚCICIELA MARKI — SERHII SHYROKOSTUPA</h2>",
+            "image": "shopify://shop_images/2024-07-08-15.07.48.jpg",
+            "layout": "text_image",
+            "mobile_image_first": false,
+            "image_aspect_ratio": "4/3",
+            "gap": 40,
+            "mobile_gap": 30,
+            "background_color": "#ffffff",
+            "text_color": "#454544",
+            "heading_color": "#232322",
+            "link_color": "#232322",
+            "link_hover_color": "#454544",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "padding_horizontal": 20,
+            "mobile_padding_top": 30,
+            "mobile_padding_bottom": 30,
+            "mobile_padding_horizontal": 20,
+            "image_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c4f2e98_wYxnNT"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}",
+        " {max-width: 1350px; margin: 0 auto;}"
+      ],
+      "settings": {}
+    },
+    "176003253145d7db24": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8ee829e_PVPwgn": {
+          "type": "ai_gen_block_8ee829e",
+          "settings": {
+            "content": "<p>Witaj w społeczności Urban Samurajów!<br/><br/>Od 10 lat tworzymy odzież technologiczną, która — oprócz unikalnego designu — niesie ze sobą funkcjonalne i konceptualne znaczenia.<br/><br/>Zjednoczyliśmy silną społeczność Urban Samurajów — ludzi, którzy nie boją się wyzwań współczesnego świata, dążą do nieustannego rozwoju i transformacji!</p><p>Ja oraz nasz zespół jesteśmy ogromnie wdzięczni każdemu za wsparcie! To dla nas niezwykle ważne — wasze opinie i zaufanie są źródłem naszej inspiracji i energii do dalszego działania! ⚔️</p><p><strong>NASZA MISJA</strong><br/><br/>Tworzyć futurystyczną odzież z naciskiem na funkcjonalność — dla aktywnych, młodych ludzi, którzy pragną wyrażać siebie w nowoczesnym świecie.</p><p><strong>BIG IDEA</strong><br/><br/>Odzwierciedlać technologiczny rozwój ludzkości i dynamiczną urbanizację poprzez futurystyczny design i innowacyjne rozwiązania.<br/><br/>Sprawić, by produkt TUR przemawiał za człowieka bez słów.</p><p><strong>WARTOŚCI</strong></p><p><strong>Wzajemny szacunek</strong><br/><br/>Szacunek w podejmowaniu decyzji, w komunikacji i w relacjach w zespole. Zrozumienie znaczenia współpracy dla osiągnięcia wielkich celów i idei.</p><p><strong>Energia</strong><br/><br/>Energetyczni ludzie działają szybko, nie trzeba ich popychać. Są zwolennikami nauki i samorozwoju. Potrafią brać większą odpowiedzialność i stać się wewnętrznym motorem zespołu — motywują mniej aktywnych członków i tworzą zdrową konkurencję dla silnych.</p><p><strong>Uczciwość</strong><br/><br/>Stawiamy na otwartą komunikację, wymianę informacji i energii. Nie ma miejsca na hipokryzję ani podwójną grę. Być uczciwym to być autentycznym i działać w sposób etyczny.</p>",
+            "content_width": 1350,
+            "text_alignment": "left",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "background_color": "#ffffff",
+            "text_color": "#454544",
+            "heading_color": "#232322",
+            "link_color": "#232322",
+            "link_hover_color": "#737372",
+            "accent_color": "#232322",
+            "blockquote_background": "#f7f7f7",
+            "text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8ee829e_PVPwgn"
+      ],
+      "settings": {}
+    },
+    "terrikon_cover_grid_Tb83g3": {
+      "type": "terrikon-cover-grid",
+      "blocks": {
+        "terrikon_card_xaekmN": {
+          "type": "terrikon_card",
+          "settings": {
+            "image": "shopify://shop_images/techwear-2-scaled.webp",
+            "alt_text": "",
+            "caption": "Techwear",
+            "link": "shopify://collections/techwear-style",
+            "new_tab": false
+          }
+        },
+        "terrikon_card_DrpchF": {
+          "type": "terrikon_card",
+          "settings": {
+            "image": "shopify://shop_images/modern-samurai-2-scaled.webp",
+            "alt_text": "",
+            "caption": "Urban Samurai",
+            "link": "shopify://collections/modern-samurai-style",
+            "new_tab": false
+          }
+        },
+        "terrikon_card_Afj9dC": {
+          "type": "terrikon_card",
+          "settings": {
+            "image": "shopify://shop_images/darkwear-2-scaled.webp",
+            "alt_text": "",
+            "caption": "Darkwear",
+            "link": "shopify://collections/darkwear-style",
+            "new_tab": false
+          }
+        },
+        "terrikon_card_FHL8yU": {
+          "type": "terrikon_card",
+          "settings": {
+            "image": "shopify://shop_images/cyber-2-scaled.webp",
+            "alt_text": "",
+            "caption": "Cyberpunk",
+            "link": "shopify://collections/cyberpunk-style",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "terrikon_card_xaekmN",
+        "terrikon_card_DrpchF",
+        "terrikon_card_Afj9dC",
+        "terrikon_card_FHL8yU"
+      ],
+      "name": "Cover Grid",
+      "settings": {
+        "title": "Kluczowe style i koncepcja ekosystemu"
+      }
+    },
+    "blocks_njXDzD": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8ee829e_FF9Mit": {
+          "type": "ai_gen_block_8ee829e",
+          "settings": {
+            "content": "<p>MY – KONCEPCYJNY EKOSYSTEM<br/><br/>Nie tylko prowadzimy te kierunki na rynku ukraińskim – łączymy i miksujemy ich znaczenia oraz zalety, szukając najlepszych połączeń estetyki i funkcjonalności.</p><p>Nasza idea opiera się na koncepcji odzieży jako logicznego następstwa rozwoju technologicznego ludzkości oraz jako odpowiedzi na problem współczesnego środowiska miejskiego: masowej, szybkiej produkcji prowadzącej do chaosu. Do tworzenia odzieży można – i trzeba – podchodzić racjonalnie. My wybraliśmy tę drogę. Skupiamy się nie tylko na emocjonalnej stronie zakupu, lecz także na konkretnych zadaniach i praktycznych wyzwaniach, które stoją przed Tobą.</p><p>Dlatego w procesie tworzenia kierujemy się filozofią firmy Apple: nasze produkty tworzą własny ekosystem, a nasz przekaz polega na tym, by oferować nie tylko ubrania, lecz styl życia – przynależność do wyjątkowej społeczności samurajów.<br/><br/>Jeśli widzisz osobę w ubraniach TUR, wiesz od razu — jesteście z tego samego klanu ⚔️</p>",
+            "content_width": 1350,
+            "text_alignment": "left",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "background_color": "#ffffff",
+            "text_color": "#454544",
+            "heading_color": "#232322",
+            "link_color": "#232322",
+            "link_hover_color": "#737372",
+            "accent_color": "#232322",
+            "blockquote_background": "#f7f7f7",
+            "text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8ee829e_FF9Mit"
+      ],
+      "settings": {}
+    },
+    "terrikon_grid_images_emUiJP": {
+      "type": "terrikon-grid-images",
+      "blocks": {
+        "card_UL3RDc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-24.jpg",
+            "alt_text": "",
+            "caption": "Rok 2015"
+          }
+        },
+        "card_dRdARf": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-23.jpg",
+            "alt_text": "",
+            "caption": "Rok 2016"
+          }
+        },
+        "card_4QUxzP": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-25-560x839.jpg",
+            "alt_text": "",
+            "caption": "Rok 2016"
+          }
+        },
+        "card_AQkdPE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/1-1_ade34500-45d9-46cd-81d0-c75ccb77b6b9.webp",
+            "alt_text": "",
+            "caption": "Rok 2021"
+          }
+        },
+        "card_Q37BAa": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/151.jpg",
+            "alt_text": "",
+            "caption": "Rok 2021"
+          }
+        },
+        "card_jFFxqx": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/3_d5a8281a-a883-4114-b8c2-0532c7fb1ef8.webp",
+            "alt_text": "",
+            "caption": "Rok 2023"
+          }
+        },
+        "card_jbam3q": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/2_e85c36f3-1bb8-4a47-bfd1-122fde721054.webp",
+            "alt_text": "",
+            "caption": "Rok 2024"
+          }
+        },
+        "card_NwpVfK": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/9451416-_-_-3.webp",
+            "alt_text": "",
+            "caption": "Rok 2025"
+          }
+        }
+      },
+      "block_order": [
+        "card_UL3RDc",
+        "card_dRdARf",
+        "card_4QUxzP",
+        "card_AQkdPE",
+        "card_Q37BAa",
+        "card_jFFxqx",
+        "card_jbam3q",
+        "card_NwpVfK"
+      ],
+      "name": "Grid Images (compact)",
+      "settings": {
+        "title": "NASZA HISTORIA",
+        "max_columns": 2
+      }
+    },
+    "blocks_gUkf7g": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8ee829e_GpC3Ef": {
+          "type": "ai_gen_block_8ee829e",
+          "settings": {
+            "content": "<p>Nasza historia sięga roku 2015.<br/><br/>W okresie dynamicznego rozwoju lokalnych marek pojawiliśmy się także my.<br/><br/>Myśląc o rozwoju, zaczęliśmy też myśleć o wyjątkowości — tak odkryliśmy dla siebie style <strong>Techwear</strong> i <strong>Cyberpunk</strong>.<br/><br/>Założyciel i główny projektant marki, <strong>Serhii Shyrokostup</strong>, dostrzegł w nich połączenie funkcjonalności z nietypową estetyką, a także echo swoich pasji — muzyki (jeszcze w szkole był członkiem zespołu metalowego i grał na gitarze basowej), gier komputerowych oraz futuryzmu.</p><p>W 2019 roku marka przyjęła pozycjonowanie <strong>„dostępny techwear dla współczesnych samurajów”</strong>, a hasłem stało się <strong>„Samurai not dead”</strong> — interpretacja kultowego „Punk not dead”.<br/><br/>Wtedy też utwierdziliśmy się w przekonaniu, że chcemy się wyróżniać: zwracać większą uwagę na detale, materiały i dodatki, promować i rozwijać własny styl.<br/><br/>W tym samym czasie obraliśmy również strategię tworzenia własnego ekosystemu.</p><p>Przez 10 lat obecności na rynku stworzyliśmy około <strong>185 unikalnych modeli</strong> i opracowaliśmy system kontroli jakości, który pozwolił zredukować ilość wadliwych produktów niemal do zera.<br/><br/>Dzięki naszej idei, historii i filozofii zgromadziliśmy aktywną, kreatywną społeczność.<br/><br/>Dziś naszym celem jest dalsze budowanie <strong>komunii ludzi, którzy podzielają nasze wartości i estetyczną wizję</strong>.</p>",
+            "content_width": 1350,
+            "text_alignment": "left",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "background_color": "#ffffff",
+            "text_color": "#454544",
+            "heading_color": "#232322",
+            "link_color": "#232322",
+            "link_hover_color": "#737372",
+            "accent_color": "#232322",
+            "blockquote_background": "#f7f7f7",
+            "text_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8ee829e_GpC3Ef"
+      ],
+      "settings": {}
+    },
+    "terrikon_fullwidth_image_QFPbJk": {
+      "type": "terrikon-fullwidth-image",
+      "name": "Fullwidth Image",
+      "settings": {
+        "label": "Fullwidth image",
+        "image": "shopify://shop_images/Minimalist_Timeline_Diagram_Concept_Map_2.webp",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "blocks_pjERiC": {
+      "type": "_blocks",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_QBNmV4",
+    "page_hero_kVYDMK",
+    "176003215998b6c365",
+    "176003253145d7db24",
+    "terrikon_cover_grid_Tb83g3",
+    "blocks_njXDzD",
+    "terrikon_grid_images_emUiJP",
+    "blocks_gUkf7g",
+    "terrikon_fullwidth_image_QFPbJk",
+    "blocks_pjERiC"
+  ]
+}

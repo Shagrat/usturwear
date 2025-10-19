@@ -1,0 +1,306 @@
+{% doc %}
+  @prompt
+    Section with richtext block but full width
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-richtext-fullwidth-{{ ai_gen_id }} {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-richtext-fullwidth-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.content_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} {
+    font-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+    font-weight: {{ settings.type_body_font.weight }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: {{ settings.type_body_line_height | divided_by: 100.0 }};
+    color: {{ block.settings.text_color }};
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h1,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h2,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h3,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h4,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h5,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h6 {
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-weight: {{ settings.type_header_font.weight }};
+    line-height: {{ settings.type_header_line_height }};
+    letter-spacing: {{ settings.type_header_letter_spacing }}px;
+    text-transform: {{ settings.heading_text_transform }};
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 1em;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h1 {
+    font-size: {{ settings.heading_h1_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h2 {
+    font-size: {{ settings.heading_h2_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h3 {
+    font-size: {{ settings.heading_h3_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h4 {
+    font-size: {{ settings.heading_h4_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h5 {
+    font-size: {{ settings.heading_h5_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} h6 {
+    font-size: {{ settings.heading_h6_size }}px;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} p {
+    margin: 0 0 1em;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} ul,
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} ol {
+    margin: 0 0 1em;
+    padding-left: 1.5em;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} li {
+    margin-bottom: 0.5em;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} blockquote {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    border-left: 4px solid {{ block.settings.accent_color }};
+    background-color: {{ block.settings.blockquote_background }};
+    font-style: italic;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} strong {
+    font-weight: 600;
+  }
+
+  .ai-richtext-fullwidth-content-{{ ai_gen_id }} em {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-richtext-fullwidth-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.7 }}px 0 {{ block.settings.padding_bottom | times: 0.7 }}px;
+    }
+
+    .ai-richtext-fullwidth-container-{{ ai_gen_id }} {
+      padding: 0 15px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h1 {
+      font-size: {{ settings.heading_h1_size | times: 0.7 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h2 {
+      font-size: {{ settings.heading_h2_size | times: 0.7 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h3 {
+      font-size: {{ settings.heading_h3_size | times: 0.8 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h4 {
+      font-size: {{ settings.heading_h4_size | times: 0.8 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h5 {
+      font-size: {{ settings.heading_h5_size | times: 0.9 }}px;
+    }
+
+    .ai-richtext-fullwidth-content-{{ ai_gen_id }} h6 {
+      font-size: {{ settings.heading_h6_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-richtext-fullwidth-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-richtext-fullwidth-container-{{ ai_gen_id }}">
+    {% if block.settings.content != blank %}
+      <div class="ai-richtext-fullwidth-content-{{ ai_gen_id }}">
+        {{ block.settings.content }}
+      </div>
+    {% else %}
+      <div class="ai-richtext-fullwidth-content-{{ ai_gen_id }}">
+        <h2>Add your content here</h2>
+        <p>Use the rich text editor to add headings, paragraphs, lists, and more to create engaging content that spans the full width of the page.</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Full width rich text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Rich text content",
+      "default": "<h2>Full width rich text</h2><p>Use this section to create engaging content that spans the full width of your page. Perfect for announcements, detailed descriptions, or any content that needs maximum visual impact.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content width",
+      "default": 1200
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#454544"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#232322"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#232322"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover color",
+      "default": "#737372"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#232322"
+    },
+    {
+      "type": "color",
+      "id": "blockquote_background",
+      "label": "Blockquote background",
+      "default": "#F7F7F7"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full width rich text"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

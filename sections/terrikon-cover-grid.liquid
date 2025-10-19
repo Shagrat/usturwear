@@ -1,0 +1,243 @@
+{% comment %}
+  Terrikon Cover Grid
+  - max-width 1350px
+  - h2 heading
+  - repeatable blocks: image + caption + optional link (open in new tab)
+  - grid: 2 columns on desktop, 1 column on mobile
+  - caption overlay at bottom of image
+{% endcomment %}
+
+<section id="terrikon-cover-grid-{{ section.id }}" class="terrikon-cover-grid">
+  <div class="terrikon-cover-grid__inner">
+    <h2 class="terrikon-cover-grid__title">{{ section.settings.title }}</h2>
+
+    <div class="terrikon-cover-grid__list">
+      {% if section.blocks != empty %}
+        {% for block in section.blocks %}
+          <div class="terrikon-cover-grid__item">
+            {% if block.settings.link != blank %}
+              <a
+                href="{{ block.settings.link }}"
+                class="terrikon-cover-grid__link"
+                {% if block.settings.new_tab %}
+                target="_blank"
+                rel="noopener noreferrer"
+                {% endif %}>
+                <span class="terrikon-cover-grid__image-wrap">
+                  <img
+                    src="{{ block.settings.image | img_url: '1200x' }}"
+                    alt="{{ block.settings.alt_text | escape }}"
+                    loading="lazy"
+                    class="terrikon-cover-grid__image" />
+                  <span class="terrikon-cover-grid__overlay">
+                    <span class="terrikon-cover-grid__caption">{{ block.settings.caption }}</span>
+                  </span>
+                </span>
+              </a>
+            {% else %}
+              <div class="terrikon-cover-grid__link is-unlinked">
+                <span class="terrikon-cover-grid__image-wrap">
+                  <img
+                    src="{{ block.settings.image | img_url: '1200x' }}"
+                    alt="{{ block.settings.alt_text | escape }}"
+                    loading="lazy"
+                    class="terrikon-cover-grid__image" />
+                  <span class="terrikon-cover-grid__overlay">
+                    <span class="terrikon-cover-grid__caption">{{ block.settings.caption }}</span>
+                  </span>
+                </span>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <!-- fallback example -->
+        <div class="terrikon-cover-grid__item">
+          <div class="terrikon-cover-grid__link is-unlinked">
+            <span class="terrikon-cover-grid__image-wrap">
+              <img
+                src="{{ 'techwear-2-scaled.webp' | asset_url }}"
+                alt="Techwear"
+                class="terrikon-cover-grid__image"
+                loading="lazy" />
+              <span class="terrikon-cover-grid__overlay">
+                <span class="terrikon-cover-grid__caption">Techwear</span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="terrikon-cover-grid__item">
+          <div class="terrikon-cover-grid__link is-unlinked">
+            <span class="terrikon-cover-grid__image-wrap">
+              <img
+                src="{{ 'techwear-2-scaled.webp' | asset_url }}"
+                alt="Techwear"
+                class="terrikon-cover-grid__image"
+                loading="lazy" />
+              <span class="terrikon-cover-grid__overlay">
+                <span class="terrikon-cover-grid__caption">Shop the style</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+  .terrikon-cover-grid {
+    padding: 40px 20px;
+  }
+  .terrikon-cover-grid__inner {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  .terrikon-cover-grid__title {
+    font-size: 36px;
+    margin: 0 0 28px;
+  }
+
+  /* grid: 2 columns on desktop, 1 on mobile */
+  .terrikon-cover-grid__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .terrikon-cover-grid__item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* image wrapper keeps aspect ratio similar to cover block */
+  .terrikon-cover-grid__image-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    /* 4:5 ratio */
+    overflow: hidden;
+  }
+  .terrikon-cover-grid__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+  .terrikon-cover-grid__item:hover .terrikon-cover-grid__image,
+  .terrikon-cover-grid__item:focus-within .terrikon-cover-grid__image {
+    transform: scale(1.03);
+  }
+
+  /* caption overlay at bottom */
+  .terrikon-cover-grid__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0) 100%);
+    display: flex;
+    align-items: center;
+    /* center vertically */
+    justify-content: center;
+    /* center horizontally */
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .terrikon-cover-grid__caption {
+    color: #fff;
+    font-size: 36px;
+    /* desktop size */
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 600;
+    max-width: 90%;
+    word-wrap: break-word;
+  }
+
+  /* responsive: single column on mobile */
+  @media (max-width: 767px) {
+    .terrikon-cover-grid__list {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .terrikon-cover-grid__title {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+    .terrikon-cover-grid__image-wrap {
+      padding-bottom: 80%;
+    }
+    .terrikon-cover-grid__caption {
+      font-size: 24px;
+      /* mobile size */
+    }
+  }
+
+  /* small accessibility / focus */
+  .terrikon-cover-grid__link:focus {
+    outline: 3px solid rgba(0, 0, 0, 0.12);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+  {
+    "name": "Terrikon — Cover Grid",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading (H2)",
+        "default": "ДЕТАЛІ"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Card",
+        "type": "terrikon_card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "alt_text",
+            "label": "Alt text"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption (overlay text)"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link (leave empty for no link)"
+          }, {
+            "type": "checkbox",
+            "id": "new_tab",
+            "label": "Open link in new tab",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "max_blocks": 20,
+    "presets": [
+      {
+        "name": "Cover Grid",
+        "category": "Terrikon"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,694 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "block_1": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
+            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
+            "color_scheme": "dark",
+            "heading": "Odzież męska",
+            "text": "",
+            "button_label": "Przejdź do",
+            "button_link": "shopify://pages/odziez-meska",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
+        "block_2": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
+            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
+            "color_scheme": "dark",
+            "heading": "Odzież damska",
+            "text": "",
+            "button_label": "Przejdź do",
+            "button_link": "shopify://pages/odziez-damska",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
+        "block_3": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
+            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
+            "color_scheme": "dark",
+            "heading": "Akcesoria",
+            "text": "",
+            "button_label": "Przejdź do",
+            "button_link": "shopify://pages/akcesoria",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
+        "slideshow_item_iLBgDj": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0185.webp",
+            "mobile_image": "shopify://shop_images/3_d6029411-cab3-4581-8dfe-fdf925975d67.webp",
+            "color_scheme": "dark",
+            "heading": "Nowe produkty",
+            "text": "",
+            "button_label": "Przejdź do",
+            "button_link": "shopify://collections/nowe-produkty",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "slideshow_item_iLBgDj"
+      ],
+      "settings": {
+        "section_layout": "full",
+        "image_size": "adapt",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "popular_products_EbXgtW": {
+      "type": "popular-products",
+      "settings": {
+        "subheading": "",
+        "heading": "BESTSELLERY DLA NIEGO",
+        "button_label": "",
+        "button_link": "",
+        "product_list": [
+          "kurtka-przeciwwiatrowa-z-nadrukami-darknet",
+          "spodnie-z-nadrukami-krypto",
+          "plecak-pancerz",
+          "anorak-edo"
+        ],
+        "collection": "",
+        "product_count": 3,
+        "per_row": 4,
+        "mobile_card_count": true,
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "show_secondary_image": false,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "popular_products_kwkU4C": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "subheading": "",
+        "heading": "BESTSELLERY DLA NIEJ",
+        "button_label": "",
+        "button_link": "",
+        "product_list": [
+          "kombinezon-fly",
+          "body-kovra",
+          "damski-bomber-dexter",
+          "damski-longsleeve-roxy"
+        ],
+        "collection": "",
+        "product_count": 3,
+        "per_row": 4,
+        "mobile_card_count": true,
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "show_secondary_image": false,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "categories_list_HBQJEt": {
+      "type": "categories-list",
+      "blocks": {
+        "categories_jKDxgT": {
+          "type": "categories",
+          "settings": {
+            "collection": "techwear-style",
+            "collection_image": "shopify://shop_images/1.jpg"
+          }
+        },
+        "categories_b4qVdR": {
+          "type": "categories",
+          "settings": {
+            "collection": "warcore-style",
+            "collection_image": "shopify://shop_images/2.jpg"
+          }
+        },
+        "categories_9zrd3F": {
+          "type": "categories",
+          "settings": {
+            "collection": "darkwear-style",
+            "collection_image": "shopify://shop_images/3.jpg"
+          }
+        },
+        "categories_jUbDRH": {
+          "type": "categories",
+          "settings": {
+            "collection": "cyberpunk-style",
+            "collection_image": "shopify://shop_images/4_20ebe0e8-4946-442c-995a-3230a671e9c5.jpg"
+          }
+        },
+        "categories_xcqpPD": {
+          "type": "categories",
+          "settings": {
+            "collection": "modern-samurai-style",
+            "collection_image": "shopify://shop_images/5_d153d546-e516-451b-9484-b8edf77792ef.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "categories_jKDxgT",
+        "categories_b4qVdR",
+        "categories_9zrd3F",
+        "categories_jUbDRH",
+        "categories_xcqpPD"
+      ],
+      "settings": {
+        "subheading": "Wybierz swój styl",
+        "collection_title_opacity": 40,
+        "overlay_enable": true,
+        "overlay_opacity": 20,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "margin_top": 100,
+        "margin_bottom": 100
+      }
+    },
+    "compare_XtQtPh": {
+      "type": "compare",
+      "settings": {
+        "subheading": "Nowości",
+        "heading": "Sprawdź nasze nowe produkty",
+        "button_label": "Kup nowości",
+        "button_link": "shopify://collections/nowe-produkty",
+        "image_position": "left",
+        "image_before": "shopify://shop_images/1_8bd00eaa-b7f7-406b-8f7d-8b748f352cb0.webp",
+        "image_after": "shopify://shop_images/2_0e430259-32dd-4266-bd3f-1fd0b202647b.webp",
+        "product": "bomber-dexter",
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "show_secondary_image": true,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 80,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "ticker_dUP6wb": {
+      "type": "ticker",
+      "settings": {
+        "color_scheme": "light",
+        "ticker_text": "Darmowa dostawa na wszystkie zamówienia",
+        "ticker_speed": 6,
+        "ticker_font": 14,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "featured_products_jpCwD6": {
+      "type": "featured-products",
+      "settings": {
+        "subheading": "Nowa kolekcja",
+        "heading": "NEW WARRIOR DROP",
+        "text": "<p>Estetyka militarna. Miejski rytm.</p>",
+        "product_list": [
+          "kurtka-softshell-warrior",
+          "spodnie-softshell-warrior",
+          "kurtka-przejsciowa-z-mikropolarem-warrior",
+          "spodnie-apacze"
+        ],
+        "per_row": 4,
+        "mobile_card_count": true,
+        "show_secondary_image": true,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "button_label": "Przejdź do",
+        "button_link": "shopify://collections/nowe-produkty",
+        "button_style": "primary",
+        "button_arrow": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "countdown_BnXVtd": {
+      "type": "countdown",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6.png",
+        "layout": "container",
+        "heading": "Darmowa dostawa",
+        "desc": "<p>na wszystkie zamówienia<br/><br/></p>",
+        "content_aligment": "center",
+        "overlay_enable": false,
+        "overlay_opacity": 10,
+        "time_zone": 0,
+        "date_picker": "2025-09-08",
+        "time_picker": "11:00",
+        "completed_countdown": "show_text",
+        "countdown_heading": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "button_arrow": false,
+        "padding_top": 200,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "product_markers_cTdk77": {
+      "type": "product-markers",
+      "blocks": {
+        "marker_Ehj6b3": {
+          "type": "marker",
+          "settings": {
+            "position_x": 50,
+            "position_y": 4,
+            "product": "czapka-samuraj",
+            "show_secondary_image": true,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_cRqBh7": {
+          "type": "marker",
+          "settings": {
+            "position_x": 52,
+            "position_y": 34,
+            "product": "longsleeve-z-nadrukami-takesha-2-0",
+            "show_secondary_image": true,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_kw9VRG": {
+          "type": "marker",
+          "settings": {
+            "position_x": 78,
+            "position_y": 44,
+            "product": "spodnie-royce",
+            "show_secondary_image": false,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_W7yJ9t": {
+          "type": "marker",
+          "settings": {
+            "position_x": 66,
+            "position_y": 75,
+            "product": "buty-kronos",
+            "show_secondary_image": true,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_7hjKCy": {
+          "type": "marker",
+          "settings": {
+            "position_x": 17,
+            "position_y": 16,
+            "product": "plecak-pancerz",
+            "show_secondary_image": true,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        }
+      },
+      "block_order": [
+        "marker_Ehj6b3",
+        "marker_cRqBh7",
+        "marker_kw9VRG",
+        "marker_W7yJ9t",
+        "marker_7hjKCy"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "Stwórz dla niego własny styl",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/76750685-68B8-484B-8775-174C5C40B1E0.jpg",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "product_markers_zf3EeJ": {
+      "type": "product-markers",
+      "blocks": {
+        "marker_tfi3XC": {
+          "type": "marker",
+          "settings": {
+            "position_x": 90,
+            "position_y": 40,
+            "product": "body-kovra",
+            "show_secondary_image": false,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_ETwqpF": {
+          "type": "marker",
+          "settings": {
+            "position_x": 65,
+            "position_y": 72,
+            "product": "spodnie-void",
+            "show_secondary_image": false,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        },
+        "marker_bjpEKK": {
+          "type": "marker",
+          "settings": {
+            "position_x": 90,
+            "position_y": 19,
+            "product": "czapka-urban-samurai-club",
+            "show_secondary_image": false,
+            "show_sku": false,
+            "show_vendor": true,
+            "show_desc": false
+          }
+        }
+      },
+      "block_order": [
+        "marker_tfi3XC",
+        "marker_ETwqpF",
+        "marker_bjpEKK"
+      ],
+      "name": "t:sections.product_markers.name",
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "Stwórz dla niej własny styl",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/9451416_5.webp",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "testimonials_QFU9Dr": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_gawkPx": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/7_3b774d1e-8594-485a-a68b-476cadfbebe2.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/8_31c8d8bc-49f6-45ef-b90c-a379eea313c0.webp",
+            "author_name": "@dalohim",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_jkCUPx": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/9_863d3cda-9f57-4a04-81a0-626d39334504.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/10_6778109e-79e3-486a-b414-2297ed98f6e3.webp",
+            "author_name": "@techwear_ninja",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_G8Fnfe": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/3_a26d5b7a-2e84-437c-af1b-3c22b9c0545a.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/4_9cc9b957-6068-4c55-958d-62338a6ec975.webp",
+            "author_name": "@juli.tattz",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_iweMTw": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/1_2_7742c5bd-b110-4ddd-9c8f-bade643ef5f4.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/2_2_635010db-9b82-4049-b33c-6db7efc11da4.webp",
+            "author_name": "@czxrspired_417",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_yxHG7D": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/9_82b7c9bf-dcb4-4a5b-9809-977dff704194.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/4_07ce1c55-02ea-461d-9551-8ca68d13adc5.webp",
+            "author_name": "@modelcruella",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_WU4RbR": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/10_3c772db8-9ee1-461d-876b-fdb28dbd0c7e.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/11_2.png",
+            "author_name": "@dzieckowpralce",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_bCQmUJ": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/8_48abef25-a8f9-40c5-b837-0b11f3fc06d3.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/11_114164e8-865c-4ea3-97da-2e7724441122.webp",
+            "author_name": "@kimekomi_",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        },
+        "testimonials_slide_qpxY9Y": {
+          "type": "testimonials_slide",
+          "settings": {
+            "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/11_01fb066e-3579-4510-9196-6e14f4c0337b.webp",
+            "subheading": "",
+            "text": "",
+            "enable_stars": false,
+            "rating": 5,
+            "author_image": "shopify://shop_images/1_658f5801-a602-4b0e-87ae-205e205624c4.webp",
+            "author_name": "@spiceicee",
+            "author_position": "",
+            "overlay_enable": false,
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_gawkPx",
+        "testimonials_slide_jkCUPx",
+        "testimonials_slide_G8Fnfe",
+        "testimonials_slide_iweMTw",
+        "testimonials_slide_yxHG7D",
+        "testimonials_slide_WU4RbR",
+        "testimonials_slide_bCQmUJ",
+        "testimonials_slide_qpxY9Y"
+      ],
+      "settings": {
+        "image_size": "adapt",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": false,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "instagram_collage_RtgfCC": {
+      "type": "instagram-collage",
+      "blocks": {
+        "instagram_collage_image_FfFpAb": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify://shop_images/1_2.webp"
+          }
+        },
+        "instagram_collage_image_Gf3wrV": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify://shop_images/2_2.webp"
+          }
+        },
+        "instagram_collage_image_xcmWwN": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_3.webp"
+          }
+        },
+        "instagram_collage_image_j3Dz4q": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify://shop_images/4_2_b13fd83d-01fd-44b0-8bbb-543fdab73383.webp"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_collage_image_FfFpAb",
+        "instagram_collage_image_Gf3wrV",
+        "instagram_collage_image_xcmWwN",
+        "instagram_collage_image_j3Dz4q"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "SPOŁECZNOŚĆ TUR WEAR",
+        "button_label": "Śledź nas na Instagramie",
+        "icon_social": "instagram",
+        "button_link": "https://www.instagram.com/turwear_world?igsh=MWVjZTVwam8wczF5NQ==",
+        "column_per_row": 4,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 0,
+        "margin_bottom": 80,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "popular_products_EbXgtW",
+    "popular_products_kwkU4C",
+    "categories_list_HBQJEt",
+    "compare_XtQtPh",
+    "ticker_dUP6wb",
+    "featured_products_jpCwD6",
+    "countdown_BnXVtd",
+    "product_markers_cTdk77",
+    "product_markers_zf3EeJ",
+    "testimonials_QFU9Dr",
+    "instagram_collage_RtgfCC"
+  ]
+}

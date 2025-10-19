@@ -1,0 +1,428 @@
+{% doc %}
+  @prompt
+    Block with 2/3rds of rich text and 1/3 of image. Ability to change order of text and image. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-text-image-block-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.gap }}px;
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_horizontal }}px {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+    max-width: 100%;
+  }
+
+  .ai-text-image-block-{{ ai_gen_id }}--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} {
+    flex: 2;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h1,
+  .ai-text-content-{{ ai_gen_id }} h2,
+  .ai-text-content-{{ ai_gen_id }} h3,
+  .ai-text-content-{{ ai_gen_id }} h4,
+  .ai-text-content-{{ ai_gen_id }} h5,
+  .ai-text-content-{{ ai_gen_id }} h6 {
+    color: {{ block.settings.heading_color }};
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-weight: {{ settings.type_header_font.weight }};
+    text-transform: {{ settings.heading_text_transform }};
+    letter-spacing: {{ settings.type_header_letter_spacing }}px;
+    line-height: {{ settings.type_header_line_height }};
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h1 {
+    font-size: {{ settings.heading_h1_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h2 {
+    font-size: {{ settings.heading_h2_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h3 {
+    font-size: {{ settings.heading_h3_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h4 {
+    font-size: {{ settings.heading_h4_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h5 {
+    font-size: {{ settings.heading_h5_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h6 {
+    font-size: {{ settings.heading_h6_size }}px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} p {
+    font-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+    font-weight: {{ settings.type_body_font.weight }};
+    font-size: {{ settings.body_size }}px;
+    line-height: {{ settings.type_body_line_height }}%;
+    margin-bottom: 1rem;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  .ai-text-content-{{ ai_gen_id }} ul,
+  .ai-text-content-{{ ai_gen_id }} ol {
+    font-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+    font-weight: {{ settings.type_body_font.weight }};
+    font-size: {{ settings.body_size }}px;
+    line-height: {{ settings.type_body_line_height }}%;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} li {
+    margin-bottom: 0.5rem;
+  }
+
+  .ai-image-content-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ai-image-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .ai-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+    background-color: {{ settings.colors_background_2 }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+    color: {{ settings.colors_text_secondary }};
+  }
+
+  .ai-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: 14px;
+    color: {{ settings.colors_text_secondary }};
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-text-image-block-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: {{ block.settings.mobile_gap }}px;
+      padding: {{ block.settings.mobile_padding_top }}px {{ block.settings.mobile_padding_horizontal }}px {{ block.settings.mobile_padding_bottom }}px;
+    }
+
+    .ai-text-image-block-{{ ai_gen_id }}--reverse {
+      flex-direction: column;
+    }
+
+    {% if block.settings.mobile_image_first %}
+      .ai-text-image-block-{{ ai_gen_id }} .ai-image-content-{{ ai_gen_id }} {
+        order: -1;
+      }
+    {% endif %}
+
+    .ai-text-content-{{ ai_gen_id }} h1 {
+      font-size: calc({{ settings.heading_h1_size }}px * 0.8);
+    }
+
+    .ai-text-content-{{ ai_gen_id }} h2 {
+      font-size: calc({{ settings.heading_h2_size }}px * 0.8);
+    }
+
+    .ai-text-content-{{ ai_gen_id }} h3 {
+      font-size: calc({{ settings.heading_h3_size }}px * 0.8);
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-text-image-block-{{ ai_gen_id }} {% if block.settings.layout == 'image_text' %}ai-text-image-block-{{ ai_gen_id }}--reverse{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-text-content-{{ ai_gen_id }}">
+    {% if block.settings.content != blank %}
+      {{ block.settings.content }}
+    {% else %}
+      <h2>Add your content</h2>
+      <p>Use the rich text editor to add headings, paragraphs, lists, and links to create engaging content for your customers.</p>
+    {% endif %}
+  </div>
+
+  <div class="ai-image-content-{{ ai_gen_id }}">
+    <div class="ai-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 800 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+        >
+      {% else %}
+        <div class="ai-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-empty-state-{{ ai_gen_id }}">
+            Add an image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text with image",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text content",
+      "default": "<h2>Tell your story</h2><p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Desktop layout",
+      "options": [
+        {
+          "value": "text_image",
+          "label": "Text then image"
+        },
+        {
+          "value": "image_text",
+          "label": "Image then text"
+        }
+      ],
+      "default": "text_image"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_image_first",
+      "label": "Show image first on mobile",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "4/3",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "3/4",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "16/9",
+          "label": "Wide (16:9)"
+        }
+      ],
+      "default": "4/3"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 20,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop gap between text and image",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "min": 20,
+      "max": 60,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile gap between text and image",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#454544"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#232322"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#232322"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover color",
+      "default": "#454544"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop top padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop bottom padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile top padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile bottom padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_horizontal",
+      "min": 0,
+      "max": 60,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Image style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text with image"
+    }
+  ]
+}
+{% endschema %}

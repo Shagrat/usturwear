@@ -1,0 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "collection_per_page": 9,
+        "per_row": 4,
+        "sort": "products_high",
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

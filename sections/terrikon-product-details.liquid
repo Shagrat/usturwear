@@ -1,0 +1,434 @@
+{% comment %} 
+                  Terrikon Product Details Slider Section with SwiperJS + lightbox 
+{% endcomment %}
+
+<!-- Swiper CSS (from assets) -->
+<link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}" />
+{% assign current_variant = null %}
+{% for variant in product.variants %}
+  {% if product.selected_or_first_available_variant.id == variant.id %}
+    {% assign current_variant = variant %}
+  {% endif %}
+{% endfor %}
+{% assign entries = current_variant.metafields.custom.product_details.value %}
+{% if current_variant and entries %}
+  
+    <section id="product-details-{{ section.id }}" class="terrikon-product-details-section">
+    <div class="product-details-inner">
+      <h2 class="product-details-title">{{ section.settings.title }}</h2>
+
+      <div class="swiper product-details-swiper product-details-swiper-{{ section.id }}">
+        <div class="swiper-wrapper">
+
+          {% for detail in entries %}
+            {% if detail.image %}
+              <div class="swiper-slide">
+                <button
+                  type="button"
+                  class="product-details-image-btn"
+                  aria-label="Open image">
+                  <img
+                    src="{{ detail.image | img_url: '720x720' }}"
+                    data-large="{{ detail.image | img_url: '2048x2048' }}"
+                    alt="{{ detail.image.alt | escape }}" />
+                </button>
+                <p class="product-details-caption">{{ detail.name }}</p>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        <!-- navigation -->
+        <div class="swiper-button-prev product-details-prev-{{ section.id }}"><</div>
+        <div class="swiper-button-next product-details-next-{{ section.id }}">></div>
+      </div>
+    </div>
+
+    <!-- Lightbox modal -->
+    <div
+      class="product-details-lightbox"
+      aria-hidden="true"
+      tabindex="-1">
+      <div class="product-details-lightbox__overlay" data-close></div>
+      <button
+        class="product-details-lightbox__close"
+        aria-label="Close"
+        data-close>&times;</button>
+      <button
+        class="product-details-lightbox__nav prev"
+        aria-label="Previous"
+        data-prev>&larr;</button>
+      <div class="product-details-lightbox__content">
+        <img
+          class="product-details-lightbox__image"
+          src=""
+          alt="">
+        <p class="product-details-lightbox__caption"></p>
+      </div>
+      <button
+        class="product-details-lightbox__nav next"
+        aria-label="Next"
+        data-next>&rarr;</button>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  .terrikon-product-details-section {
+    padding: 40px 0;
+    position: relative;
+  }
+  .product-details-title {
+    font-size: 32px;
+    margin: 0 0 24px;
+  }
+  .product-details-inner {
+    max-width: 1840px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Swiper basic */
+  .product-details-swiper {
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .product-details-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .product-details-swiper .swiper-slide img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+  }
+  .product-details-image-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+  .product-details-caption {
+    font-size: 14px;
+    color: #222;
+    margin: 8px 0 0;
+    line-height: 1.4;
+  }
+
+  /* Shared arrow styles */
+  .swiper-button-next.product-details-next-{{ section.id }}
+  , .swiper-button-prev.product-details-prev-{{ section.id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    /* slimmer for half-circle look */
+    height: 80px;
+    /* taller to make it more visible */
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    /* black arrow */
+    font-size: 20px;
+    /* adjust arrow size */
+  }
+
+  /* Left button (prev) */
+  .swiper-button-prev.product-details-prev-{{ section.id }} {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+  }
+
+  .swiper-button-next.product-details-next-{{ section.id }}::after,
+  .swiper-button-prev.product-details-prev-{{ section.id }}::after {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Right button (next) */
+  .swiper-button-next.product-details-next-{{ section.id }} {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+  }
+
+  /* Lightbox */
+  .product-details-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-details-lightbox[aria-hidden="false"] {
+    display: flex;
+  }
+  .product-details-lightbox__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 1);
+  }
+  .product-details-lightbox__content {
+    position: relative;
+    max-width: 1100px;
+    width: 90vw;
+    max-height: 90vh;
+    margin: 0 80px;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-details-lightbox__image {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .product-details-lightbox__caption {
+    margin-top: 12px;
+    color: #000;
+    text-align: left;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .product-details-lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    background: #fff;
+    border-radius: 50%;
+    border-color: #000;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .product-details-lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    border-color: #000;
+    border-width: 1px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  .product-details-lightbox__nav.prev {
+    left: 20px;
+  }
+  .product-details-lightbox__nav.next {
+    right: 20px;
+  }
+
+  /* Responsive */
+  @media (min-width: 1200px) {
+    .product-details-swiper .swiper-slide {
+      width: 28%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .product-details-swiper .swiper-slide {
+      width: 45%;
+    }
+  }
+  @media (max-width: 767px) {
+    .product-details-swiper .swiper-slide img {
+      height: 220px;
+    }
+    .swiper-button-prev.product-details-prev-{{ section.id }}
+    , .swiper-button-next.product-details-next-{{ section.id }} {
+      top: 40%;
+    }
+  }
+</style>
+
+<!-- Swiper JS (from assets) -->
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+<script>
+  var terrikon_section_id = '{{ section.id }}';
+</script>
+{% javascript %}
+  (function() {
+    var sectionId = 'product-details-' + terrikon_section_id;
+    var root = document.getElementById(sectionId);
+    if (! root) return;
+    
+
+
+    function initSwiper() {
+      var swiperEl = root.querySelector('.product-details-swiper-' + terrikon_section_id);
+      if (! swiperEl || typeof Swiper === 'undefined') return;
+      
+
+
+      new Swiper(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        navigation: {
+          nextEl: '.product-details-next-' + terrikon_section_id,
+          prevEl: '.product-details-prev-' + terrikon_section_id
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2
+          },
+          992: {
+            slidesPerView: 3
+          },
+          1200: {
+            slidesPerView: 4
+          }
+        },
+        observer: true,
+        observeParents: true
+      });
+    }
+
+    function initLightbox() {
+      var lightbox = root.querySelector('.product-details-lightbox');
+      var overlay = root.querySelector('[data-close]');
+      var closeBtns = root.querySelectorAll('[data-close]');
+      var imgEl = root.querySelector('.product-details-lightbox__image');
+      var captionEl = root.querySelector('.product-details-lightbox__caption');
+      var prevBtn = root.querySelector('[data-prev]');
+      var nextBtn = root.querySelector('[data-next]');
+
+      var slides = Array.prototype.slice.call(root.querySelectorAll('.swiper-slide img'));
+      if (! slides.length) return;
+      
+
+
+      var items = slides.map(function(img) {
+        return {
+          src: img.getAttribute('data-large') || img.src,
+          caption: (img.closest('.swiper-slide') && img.closest('.swiper-slide').querySelector('.product-details-caption'))
+            ? img.closest('.swiper-slide').querySelector('.product-details-caption').innerText
+            : ''
+        };
+      });
+
+      var current = 0;
+
+      function open(index) {
+        current = (index + items.length) % items.length;
+        imgEl.src = items[current].src;
+        captionEl.textContent = items[current].caption || '';
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightbox.focus && lightbox.focus();
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      function showPrev() {
+        open(current - 1);
+      }
+      function showNext() {
+        open(current + 1);
+      }
+
+      slides.forEach(function(img, idx) {
+        img.addEventListener('click', function(e) {
+          e.preventDefault();
+          open(idx);
+        });
+      });
+
+      closeBtns.forEach(function(btn) {
+        btn.addEventListener('click', close);
+      });
+      if (overlay) 
+        overlay.addEventListener('click', close);
+      
+
+
+      if (prevBtn) 
+        prevBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          showPrev();
+        });
+      
+
+
+      if (nextBtn) 
+        nextBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          showNext();
+        });
+      
+
+
+      document.addEventListener('keydown', function(e) {
+        if (lightbox.getAttribute('aria-hidden') === 'false') {
+          if (e.key === 'Escape') 
+            close();
+          
+
+
+          if (e.key === 'ArrowLeft') 
+            showPrev();
+          
+
+
+          if (e.key === 'ArrowRight') 
+            showNext();
+          
+
+
+        }
+      });
+    }
+
+// init when DOM ready
+    document.addEventListener('DOMContentLoaded', function() {
+      initSwiper();
+      initLightbox();
+    });
+  })();
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "Product Details Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Details Slider",
+        "category": "Terrikon"
+      }
+    ]
+  }
+{% endschema %}

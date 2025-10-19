@@ -1,0 +1,72 @@
+.product-recommendations {
+  display: block;
+  --gap: 1.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .product-recommendations {
+    --gap: 3.2rem;
+  }
+}
+.product-recommendations__list {
+  display: grid;
+  align-self: flex-start;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--mobile-per-row), 1fr);
+  margin: 2.4rem 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 750px) {
+  .product-recommendations__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-recommendations__list {
+    grid-template-columns: repeat(var(--per-row), 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .product-recommendations__list.product-recommendations__list-row li:not(:nth-child(2n)):not(:last-child) .card__inner {
+    position: relative;
+  }
+  .product-recommendations__list.product-recommendations__list-row li:not(:nth-child(2n)):not(:last-child) .card__inner::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgb(var(--color-border));
+    right: calc(var(--gap) / -2);
+    pointer-events: none;
+  }
+  .product-recommendations__list.product-recommendations__list-row .card__link {
+    min-height: unset;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .product-recommendations__list li:not(:nth-child(2n)):not(:last-child) .card__inner {
+    position: relative;
+  }
+  .product-recommendations__list li:not(:nth-child(2n)):not(:last-child) .card__inner::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgb(var(--color-border));
+    right: calc(var(--gap) / -2);
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-recommendations__list li:not(.hide_border):not(:last-child) .card__inner {
+    position: relative;
+  }
+  .product-recommendations__list li:not(.hide_border):not(:last-child) .card__inner::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgb(var(--color-border));
+    right: calc(var(--gap) / -2);
+    pointer-events: none;
+  }
+}

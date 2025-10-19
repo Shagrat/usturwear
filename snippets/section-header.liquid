@@ -1,0 +1,39 @@
+{% comment %} 
+	{% render 'section-header' %}
+	{% render 'section-header' , blog_button : true %} - create button read all
+	{% render 'section-header' , button_icon : true %} - create button icon
+{% endcomment %}
+
+{%- if section.settings.heading != blank
+	or section.settings.button_label != blank
+-%}
+	<div class="section-header__line">
+		<div class="container">
+			<div class="section-header__item">
+				{%- if section.settings.subheading != blank -%}
+					<div class="subtitle">
+						{{ section.settings.subheading | escape }}
+					</div>
+				{% endif %}
+				<div class="section-header__title__block">
+					{%- if section.settings.heading != blank -%}
+						<div class="section-header__title title--section h2">
+							{{ section.settings.heading }}
+						</div>
+					{% endif %}
+					{%liquid
+						if blog_button == true
+							render 'button', layout: section, simple: true, blog_link: section.settings.blog.url
+						elsif product_button == true
+							render 'button', layout: section, simple: true, product_link: section.settings.product.url
+						elsif button_icon != blank
+							render 'button', layout: section, simple: true, icon : button_icon
+						else 
+							render 'button', layout: section, simple: true
+						endif
+					%}
+				</div>
+			</div>
+		</div>
+	</div>
+{%- endif -%}

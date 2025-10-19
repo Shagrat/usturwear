@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collection_grid_4rGHWH": {
+      "type": "collection-grid",
+      "blocks": {
+        "categories_VwWtya": {
+          "type": "categories",
+          "settings": {
+            "collection": "spodnie-i-dzinsy-dla-kobiet"
+          }
+        },
+        "categories_9c3fpY": {
+          "type": "categories",
+          "settings": {
+            "collection": "szorty-i-kolarki-dla-kobiet"
+          }
+        },
+        "categories_DLyQCw": {
+          "type": "categories",
+          "settings": {
+            "collection": "sukienki-i-spodnice-dla-kobiet",
+            "collection_image": "shopify://shop_images/turwear1857.webp"
+          }
+        }
+      },
+      "block_order": [
+        "categories_VwWtya",
+        "categories_9c3fpY",
+        "categories_DLyQCw"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "DÓŁ",
+        "button_label": "",
+        "button_link": "",
+        "per_row": 4,
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_grid_4rGHWH"
+  ]
+}

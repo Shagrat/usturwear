@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "color-background-4",
+        "overlay_enable": true,
+        "section_layout": "full",
+        "add_word": "Collection",
+        "show_word": false,
+        "show_collection_description": false,
+        "image_size": "large",
+        "show_collection_image": true,
+        "ticker_enable": false,
+        "color_scheme_ticker": "dark",
+        "ticker_position": "bottom",
+        "ticker_text": "Some text",
+        "ticker_speed": 5,
+        "ticker_font": 14,
+        "ticker_padding_top": 15,
+        "ticker_padding_bottom": 15,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "terrikon_slideshow_JFU6ap": {
+      "type": "terrikon-slideshow",
+      "blocks": {
+        "slide_J33RF8": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
+            "image_mobile": "shopify://shop_images/test_square_f03e5c55-12ed-4c51-a57e-5059c9fb6b5c.png",
+            "heading": "Darmowa dostawa",
+            "text": "na wszystkie zamówienia",
+            "text_position": "middle",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "slide_HkDNf4": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/Instagram_post_-_432_2.png",
+            "image_mobile": "shopify://shop_images/3_2_415ee7e9-854f-48b1-8aae-8e983dfdddc2.webp",
+            "heading": "Dar samuraja: 1+1=3",
+            "text": "na cały asortyment",
+            "text_position": "middle",
+            "link": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_J33RF8",
+        "slide_HkDNf4"
+      ],
+      "disabled": true,
+      "name": "Terrikon Slideshow",
+      "settings": {
+        "height_desktop": 60,
+        "height_mobile": 50
+      }
+    },
+    "slideshow_AxWaQL": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow_item_TRpjQr": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
+            "mobile_image": "shopify://shop_images/test_square_f03e5c55-12ed-4c51-a57e-5059c9fb6b5c.png",
+            "color_scheme": "dark",
+            "heading": "Darmowa dostawa",
+            "text": "<p>na wszystkie zamówienia</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": false,
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_item_TRpjQr"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_layout": "full",
+        "image_size": "adapt",
+        "is_autoplay": false,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": false,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "terrikon_collection_header_iGUREa": {
+      "type": "terrikon-collection-header",
+      "name": "Collection Header",
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "per_row": 4,
+        "mobile_card_count": true,
+        "taypes_position": "in_menu",
+        "show_secondary_image": true,
+        "show_sku": false,
+        "show_vendor": true,
+        "show_desc": false,
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "enable_filtering": true,
+        "default_open": true,
+        "enable_sorting": true,
+        "facets_count_type": "default",
+        "image_filter_ratio": "4/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
+        "margin_top": 0,
+        "margin_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "terrikon_slideshow_JFU6ap",
+    "slideshow_AxWaQL",
+    "terrikon_collection_header_iGUREa",
+    "product-grid"
+  ]
+}

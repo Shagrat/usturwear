@@ -1,0 +1,188 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_jggr8D": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow_item_HfJ9BF": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
+            "mobile_image": "shopify://shop_images/2_3cb36ed6-778d-4a06-ae01-5fa86b8d36bf.png",
+            "color_scheme": "dark",
+            "heading": "Darmowa dostawa",
+            "text": "<p>na wszystkie zamówienia</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
+        "slideshow_item_JWEMr7": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Instagram_post_-_434_2.png",
+            "mobile_image": "shopify://shop_images/1_4.webp",
+            "color_scheme": "dark",
+            "heading": "Dar samuraja: 1+1=3",
+            "text": "<p>na cały asortyment</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_item_HfJ9BF",
+        "slideshow_item_JWEMr7"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_layout": "full",
+        "image_size": "adapt",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": false,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "parallax": true,
+        "slide_effects": "slide",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "collection_grid_CMXNCR": {
+      "type": "collection-grid",
+      "blocks": {
+        "categories_3NWQQb": {
+          "type": "categories",
+          "settings": {
+            "collection": "torby"
+          }
+        },
+        "categories_k8nwpy": {
+          "type": "categories",
+          "settings": {
+            "collection": "plecaki"
+          }
+        },
+        "categories_A943zR": {
+          "type": "categories",
+          "settings": {
+            "collection": "pasy"
+          }
+        },
+        "categories_89Jpfy": {
+          "type": "categories",
+          "settings": {
+            "collection": "paski-ta-naszywki"
+          }
+        },
+        "categories_Lc8EE8": {
+          "type": "categories",
+          "settings": {
+            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami"
+          }
+        },
+        "categories_hdmqed": {
+          "type": "categories",
+          "settings": {
+            "collection": "kominiarki-i-czapki-z-uszami"
+          }
+        },
+        "categories_qiV6rR": {
+          "type": "categories",
+          "settings": {
+            "collection": "skarpety"
+          }
+        },
+        "categories_HnWFWj": {
+          "type": "categories",
+          "settings": {
+            "collection": "bielizna-dla-mezczyzn"
+          }
+        },
+        "categories_KAArEh": {
+          "type": "categories",
+          "settings": {
+            "collection": "breloki"
+          }
+        },
+        "categories_mEadcU": {
+          "type": "categories",
+          "settings": {
+            "collection": "ozdoby-dekoracyjne"
+          }
+        },
+        "categories_rjV9f9": {
+          "type": "categories",
+          "settings": {
+            "collection": "kapelusze-ta-czapki"
+          }
+        },
+        "categories_HYdPPi": {
+          "type": "categories",
+          "settings": {
+            "collection": "okulary"
+          }
+        }
+      },
+      "block_order": [
+        "categories_3NWQQb",
+        "categories_k8nwpy",
+        "categories_A943zR",
+        "categories_89Jpfy",
+        "categories_Lc8EE8",
+        "categories_hdmqed",
+        "categories_qiV6rR",
+        "categories_HnWFWj",
+        "categories_KAArEh",
+        "categories_mEadcU",
+        "categories_rjV9f9",
+        "categories_HYdPPi"
+      ],
+      "settings": {
+        "color_scheme": "color-background-1",
+        "subheading": "",
+        "heading": "Akcesoria",
+        "button_label": "",
+        "button_link": "",
+        "per_row": 3,
+        "image_ratio": "portrait",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_jggr8D",
+    "collection_grid_CMXNCR"
+  ]
+}
