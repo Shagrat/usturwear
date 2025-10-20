@@ -95,63 +95,8 @@
     "show_breadcrumbs": true,
     "content_for_index": [],
     "blocks": {
-      "2153490007123654574": {
-        "type": "shopify://apps/consentmo-gdpr/blocks/gdpr_cookie_consent/4fbe573f-a377-4fea-9801-3ee0858cae41",
-        "disabled": false,
-        "settings": {}
-      },
-      "1851928382158768582": {
-        "type": "shopify://apps/tada-pop-up-spin-wheel-popups/blocks/widget/67086c50-e25d-4e19-9d73-e6f65a8879ef",
-        "disabled": false,
-        "settings": {}
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "13440586637131102011": {
-        "type": "shopify://apps/tinycookie/blocks/cookie-embed/b65baef5-7248-4353-8fd9-b676240311dc",
-        "disabled": false,
-        "settings": {
-          "custom_css": "",
-          "hide_in_theme_editor": false,
-          "hide_in_password_page": false
-        }
-      },
       "18356332299842544250": {
         "type": "shopify://apps/b4b-variants-products/blocks/variable_init/4b5ec290-6de8-4c3d-b99f-b8721f30ea87",
-        "disabled": false,
-        "settings": {}
-      },
-      "9243414845634485640": {
-        "type": "shopify://apps/geoadapt/blocks/popup/5d10469d-9a22-46d5-a90f-3e2507f6385e",
-        "disabled": false,
-        "settings": {
-          "geopopup_testmode": true,
-          "popup_color": "#ffffff",
-          "popup_text_color": "#000000",
-          "popup_submit_color": "#000000",
-          "popup_submit_text_color": "#ffffff",
-          "popup_selector_color": "#ffffff",
-          "popup_text_selector_color": "#000000",
-          "popup_show_flag": true,
-          "hide_popup_currency": false,
-          "popup_style": "8px",
-          "show_launguage_selector": "",
-          "geopopup_header": "Just making sure we're in the right country.",
-          "geopopup_sub_header": "",
-          "geopopup_text": "",
-          "geopopup_button_text": "Ready, set, shop!"
-        }
-      },
-      "2567389343055140935": {
-        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": false,
-        "settings": {}
-      },
-      "2200952712151285029": {
-        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
