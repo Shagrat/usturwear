@@ -48,7 +48,7 @@
         "logo_2": "shopify://shop_images/tur_logo_white.svg",
         "logo_width": 50,
         "logo_position": "center",
-        "menu": "main-menu",
+        "menu": "main-menu-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "sticky_header_type": "on-scroll-up",
