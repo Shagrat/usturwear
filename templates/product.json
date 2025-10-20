@@ -43,15 +43,15 @@
         "description_EaNL6y": {
           "type": "description",
           "settings": {
-            "description_heading": "OPIS",
+            "description_heading": "DESCRIPTION",
             "default_open": true
           }
         },
         "about_4JLRbP": {
           "type": "about",
           "settings": {
-            "about_heading": "Wysyłka, płatność i zwroty",
-            "about_heading_content": "<p>Płatność online – kartą lub PayPal<br/><br/>Wysyłka w 5–7 dni roboczych<br/><br/>Zwrot w ciągu 14 dni – produkt nieużywany, z metkami<br/><br/>Brak zwrotów: bielizna, rajstopy, stroje kąpielowe i inne artykuły osobiste<br/><br/>Gwarancja 30 dni<br/><br/>Aby dokonać zwrotu, napisz na <a href=\"/pages/kontakt\" title=\"Kontakt\"><strong>turwear.sales@gmail.com</strong></a>, podając numer zamówienia lub dane kontaktowe<br/><br/></p>",
+            "about_heading": "Shipping, payment and returns",
+            "about_heading_content": "<p>Online payment – by card or PayPal<br/><br/>Shipping within 5–7 business days<br/><br/>Return within 14 days – unused product with tags<br/><br/>No returns on: underwear, tights, swimwear, and other personal items<br/><br/>30-day warranty<br/><br/>To make a return, write to <a><strong>turwear.sales@gmail.com</strong></a>, providing your order number or contact details</p>",
             "default_open": false
           }
         },
