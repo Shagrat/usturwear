@@ -96,7 +96,7 @@
       "type": "terrikon-product-details",
       "name": "Product Details Slider",
       "settings": {
-        "title": "Szczegóły"
+        "title": "Details"
       }
     },
     "17534299122ac4e08d": {
@@ -112,7 +112,7 @@
         "per_row": 3,
         "mobile_card_count": false,
         "subheading": "",
-        "heading": "Polecane produkty",
+        "heading": "Recommended products",
         "button_label": "",
         "button_link": "",
         "image_ratio": "portrait",
