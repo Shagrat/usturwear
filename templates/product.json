@@ -18,10 +18,6 @@
             "enable_vendor_link": false
           }
         },
-        "judge_me_reviews_preview_badge_qfdDcF": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "title": {
           "type": "heading",
           "settings": {}
@@ -72,7 +68,6 @@
       },
       "block_order": [
         "vendor",
-        "judge_me_reviews_preview_badge_qfdDcF",
         "title",
         "price",
         "variant_picker",
@@ -106,18 +101,6 @@
     },
     "17534299122ac4e08d": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_LFrnLa": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_LFrnLa"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -145,12 +128,33 @@
         "enable_border_top": false,
         "enable_border_bottom": false
       }
+    },
+    "176098772447462be4": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Wmz3iW": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Wmz3iW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "terrikon_product_details_xTqJT8",
     "17534299122ac4e08d",
-    "product-recommendations"
+    "product-recommendations",
+    "176098772447462be4"
   ]
 }
