@@ -587,12 +587,5 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
-  },
-  "customer_accounts": {
-    "announcement_bar": {
-      "expand_label": "antest1",
-      "collapse_label": "antest2",
-      "close_label": "antest3"
-    }
   }
 }
