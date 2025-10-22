@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slideshow_item_mx8Cbm": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "new products",
+            "text": "<p>Text from here describes your slide</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        },
         "block_1": {
           "type": "slideshow_item",
           "settings": {
@@ -24,20 +38,6 @@
             "button_arrow": true,
             "overlay_enable": true,
             "overlay_opacity": 10
-          }
-        },
-        "slideshow_item_mx8Cbm": {
-          "type": "slideshow_item",
-          "settings": {
-            "color_scheme": "dark",
-            "heading": "Slide heading",
-            "text": "<p>Text from here describes your slide</p>",
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_arrow": true,
-            "overlay_enable": true,
-            "overlay_opacity": 20
           }
         },
         "block_2": {
@@ -70,8 +70,8 @@
         }
       },
       "block_order": [
-        "block_1",
         "slideshow_item_mx8Cbm",
+        "block_1",
         "block_2",
         "block_3"
       ],
