@@ -261,7 +261,7 @@
         "show_desc": false,
         "image_ratio": "portrait",
         "image_fit": "contain",
-        "button_label": "Przejdź do",
+        "button_label": "Go to",
         "button_link": "shopify://collections/nowe-produkty",
         "button_style": "primary",
         "button_arrow": true,
