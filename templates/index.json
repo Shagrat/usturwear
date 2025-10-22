@@ -15,8 +15,6 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
-            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
             "color_scheme": "dark",
             "heading": "Odzież męska",
             "text": "",
@@ -28,13 +26,25 @@
             "overlay_opacity": 10
           }
         },
+        "slideshow_item_mx8Cbm": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "dark",
+            "heading": "Slide heading",
+            "text": "<p>Text from here describes your slide</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        },
         "block_2": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
-            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
             "color_scheme": "dark",
-            "heading": "Odzież damska",
+            "heading": "women`s clothing",
             "text": "",
             "button_label": "Przejdź do",
             "button_link": "shopify://pages/odziez-damska",
@@ -47,8 +57,6 @@
         "block_3": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/3_c6a452ea-de91-495d-b041-fd7059fcd0cc.webp",
-            "mobile_image": "shopify://shop_images/7_7d20e26d-ab18-4fe0-ab3a-61f80f4d85b3.webp",
             "color_scheme": "dark",
             "heading": "Akcesoria",
             "text": "",
@@ -59,29 +67,13 @@
             "overlay_enable": true,
             "overlay_opacity": 10
           }
-        },
-        "slideshow_item_iLBgDj": {
-          "type": "slideshow_item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_0185.webp",
-            "mobile_image": "shopify://shop_images/3_d6029411-cab3-4581-8dfe-fdf925975d67.webp",
-            "color_scheme": "dark",
-            "heading": "Nowe produkty",
-            "text": "",
-            "button_label": "Przejdź do",
-            "button_link": "shopify://collections/nowe-produkty",
-            "button_style": "primary",
-            "button_arrow": true,
-            "overlay_enable": true,
-            "overlay_opacity": 10
-          }
         }
       },
       "block_order": [
         "block_1",
+        "slideshow_item_mx8Cbm",
         "block_2",
-        "block_3",
-        "slideshow_item_iLBgDj"
+        "block_3"
       ],
       "settings": {
         "section_layout": "full",
@@ -167,36 +159,31 @@
         "categories_jKDxgT": {
           "type": "categories",
           "settings": {
-            "collection": "techwear-style",
-            "collection_image": "shopify://shop_images/1.jpg"
+            "collection": "techwear-style"
           }
         },
         "categories_b4qVdR": {
           "type": "categories",
           "settings": {
-            "collection": "warcore-style",
-            "collection_image": "shopify://shop_images/2.jpg"
+            "collection": "warcore-style"
           }
         },
         "categories_9zrd3F": {
           "type": "categories",
           "settings": {
-            "collection": "darkwear-style",
-            "collection_image": "shopify://shop_images/3.jpg"
+            "collection": "darkwear-style"
           }
         },
         "categories_jUbDRH": {
           "type": "categories",
           "settings": {
-            "collection": "cyberpunk-style",
-            "collection_image": "shopify://shop_images/4_20ebe0e8-4946-442c-995a-3230a671e9c5.jpg"
+            "collection": "cyberpunk-style"
           }
         },
         "categories_xcqpPD": {
           "type": "categories",
           "settings": {
-            "collection": "modern-samurai-style",
-            "collection_image": "shopify://shop_images/5_d153d546-e516-451b-9484-b8edf77792ef.jpg"
+            "collection": "modern-samurai-style"
           }
         }
       },
@@ -226,8 +213,6 @@
         "button_label": "Kup nowości",
         "button_link": "shopify://collections/nowe-produkty",
         "image_position": "left",
-        "image_before": "shopify://shop_images/1_8bd00eaa-b7f7-406b-8f7d-8b748f352cb0.webp",
-        "image_after": "shopify://shop_images/2_0e430259-32dd-4266-bd3f-1fd0b202647b.webp",
         "product": "bomber-dexter",
         "image_ratio": "portrait",
         "image_fit": "contain",
@@ -292,7 +277,6 @@
       "type": "countdown",
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6.png",
         "layout": "container",
         "heading": "Darmowa dostawa",
         "desc": "<p>na wszystkie zamówienia<br/><br/></p>",
@@ -391,7 +375,6 @@
         "heading": "Stwórz dla niego własny styl",
         "button_label": "",
         "button_link": "",
-        "image": "shopify://shop_images/76750685-68B8-484B-8775-174C5C40B1E0.jpg",
         "is_autoplay": true,
         "is_hover_stop_autoplay": true,
         "show_arrows": true,
@@ -457,7 +440,6 @@
         "heading": "Stwórz dla niej własny styl",
         "button_label": "",
         "button_link": "",
-        "image": "shopify://shop_images/9451416_5.webp",
         "is_autoplay": true,
         "is_hover_stop_autoplay": true,
         "show_arrows": true,
@@ -478,12 +460,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/7_3b774d1e-8594-485a-a68b-476cadfbebe2.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/8_31c8d8bc-49f6-45ef-b90c-a379eea313c0.webp",
             "author_name": "@dalohim",
             "author_position": "",
             "overlay_enable": false,
@@ -494,12 +474,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/9_863d3cda-9f57-4a04-81a0-626d39334504.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/10_6778109e-79e3-486a-b414-2297ed98f6e3.webp",
             "author_name": "@techwear_ninja",
             "author_position": "",
             "overlay_enable": false,
@@ -510,12 +488,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/3_a26d5b7a-2e84-437c-af1b-3c22b9c0545a.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/4_9cc9b957-6068-4c55-958d-62338a6ec975.webp",
             "author_name": "@juli.tattz",
             "author_position": "",
             "overlay_enable": false,
@@ -526,12 +502,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/1_2_7742c5bd-b110-4ddd-9c8f-bade643ef5f4.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/2_2_635010db-9b82-4049-b33c-6db7efc11da4.webp",
             "author_name": "@czxrspired_417",
             "author_position": "",
             "overlay_enable": false,
@@ -542,12 +516,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/9_82b7c9bf-dcb4-4a5b-9809-977dff704194.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/4_07ce1c55-02ea-461d-9551-8ca68d13adc5.webp",
             "author_name": "@modelcruella",
             "author_position": "",
             "overlay_enable": false,
@@ -558,12 +530,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/10_3c772db8-9ee1-461d-876b-fdb28dbd0c7e.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/11_2.png",
             "author_name": "@dzieckowpralce",
             "author_position": "",
             "overlay_enable": false,
@@ -574,12 +544,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/8_48abef25-a8f9-40c5-b837-0b11f3fc06d3.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/11_114164e8-865c-4ea3-97da-2e7724441122.webp",
             "author_name": "@kimekomi_",
             "author_position": "",
             "overlay_enable": false,
@@ -590,12 +558,10 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
-            "image": "shopify://shop_images/11_01fb066e-3579-4510-9196-6e14f4c0337b.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
-            "author_image": "shopify://shop_images/1_658f5801-a602-4b0e-87ae-205e205624c4.webp",
             "author_name": "@spiceicee",
             "author_position": "",
             "overlay_enable": false,
@@ -632,27 +598,19 @@
       "blocks": {
         "instagram_collage_image_FfFpAb": {
           "type": "instagram-collage_image",
-          "settings": {
-            "image": "shopify://shop_images/1_2.webp"
-          }
+          "settings": {}
         },
         "instagram_collage_image_Gf3wrV": {
           "type": "instagram-collage_image",
-          "settings": {
-            "image": "shopify://shop_images/2_2.webp"
-          }
+          "settings": {}
         },
         "instagram_collage_image_xcmWwN": {
           "type": "instagram-collage_image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_3.webp"
-          }
+          "settings": {}
         },
         "instagram_collage_image_j3Dz4q": {
           "type": "instagram-collage_image",
-          "settings": {
-            "image": "shopify://shop_images/4_2_b13fd83d-01fd-44b0-8bbb-543fdab73383.webp"
-          }
+          "settings": {}
         }
       },
       "block_order": [
