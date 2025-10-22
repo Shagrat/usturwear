@@ -208,7 +208,7 @@
     "compare_XtQtPh": {
       "type": "compare",
       "settings": {
-        "subheading": "Nowości",
+        "subheading": "New arrivals",
         "heading": "Sprawdź nasze nowe produkty",
         "button_label": "Kup nowości",
         "button_link": "shopify://collections/nowe-produkty",
