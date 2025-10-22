@@ -17,7 +17,7 @@
           "settings": {
             "color_scheme": "dark",
             "heading": "new products",
-            "text": "<p>Text from here describes your slide</p>",
+            "text": "",
             "button_label": "Button label",
             "button_link": "",
             "button_style": "primary",
@@ -30,7 +30,7 @@
           "type": "slideshow_item",
           "settings": {
             "color_scheme": "dark",
-            "heading": "Odzież męska",
+            "heading": "men’s clothing",
             "text": "",
             "button_label": "Przejdź do",
             "button_link": "shopify://pages/odziez-meska",
