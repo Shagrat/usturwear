@@ -209,7 +209,7 @@
       "type": "compare",
       "settings": {
         "subheading": "New arrivals",
-        "heading": "Sprawdź nasze nowe produkty",
+        "heading": "Check out our new products",
         "button_label": "Kup nowości",
         "button_link": "shopify://collections/nowe-produkty",
         "image_position": "left",
