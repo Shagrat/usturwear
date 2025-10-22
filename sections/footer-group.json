@@ -26,14 +26,14 @@
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Pomoc i informacje",
+            "heading": "Help and information",
             "menu": "footer"
           }
         },
         "link_list_jbQfdT": {
           "type": "link_list",
           "settings": {
-            "heading": "Kontakty",
+            "heading": "Contacts",
             "menu": ""
           }
         },
