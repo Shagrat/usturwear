@@ -34,7 +34,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Kontakty",
-            "menu": "footer-menu-2"
+            "menu": ""
           }
         },
         "show_social_V8fYg7": {
@@ -46,9 +46,9 @@
         "footer-4": {
           "type": "subscribe",
           "settings": {
-            "heading": "<p>ZAPISZ SIĘ DO NEWSLETTERA</p>",
-            "newsletter_text": "<p>Otrzymuj informacje o nowościach i promocjach</p>",
-            "button_label": "ZAPISZ",
+            "heading": "<p>SUBSCRIBE TO THE NEWSLETTER<br/><br/></p>",
+            "newsletter_text": "<p>Receive updates on new arrivals and promotions</p>",
+            "button_label": "SUBSCRIBE",
             "button_style": "primary",
             "button_arrow": true,
             "enable_border_left": true,
