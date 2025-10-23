@@ -23,8 +23,6 @@
         "slideshow_item_HfJ9BF": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
-            "mobile_image": "shopify://shop_images/2_3cb36ed6-778d-4a06-ae01-5fa86b8d36bf.png",
             "color_scheme": "dark",
             "heading": "Darmowa dostawa",
             "text": "<p>na wszystkie zamówienia</p>",
@@ -39,8 +37,6 @@
         "slideshow_item_JWEMr7": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Instagram_post_-_434_2.png",
-            "mobile_image": "shopify://shop_images/1_4.webp",
             "color_scheme": "dark",
             "heading": "Dar samuraja: 1+1=3",
             "text": "<p>na cały asortyment</p>",
@@ -166,7 +162,7 @@
       "settings": {
         "color_scheme": "color-background-1",
         "subheading": "",
-        "heading": "Akcesoria",
+        "heading": "Accessories",
         "button_label": "",
         "button_link": "",
         "per_row": 3,
