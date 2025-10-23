@@ -29,6 +29,8 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
+            "image": "shopify://shop_images/Baner_cholovichiy.png",
+            "mobile_image": "shopify://shop_images/Baner_chol_mob.png",
             "color_scheme": "dark",
             "heading": "men’s clothing",
             "text": "",
