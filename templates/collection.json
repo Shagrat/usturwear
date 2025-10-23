@@ -40,10 +40,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
-            "image_mobile": "shopify://shop_images/test_square_f03e5c55-12ed-4c51-a57e-5059c9fb6b5c.png",
-            "heading": "Darmowa dostawa",
-            "text": "na wszystkie zamówienia",
+            "heading": "Free shipping worldwide",
+            "text": "on all orders",
             "text_position": "middle",
             "link": "",
             "link_text": ""
@@ -53,8 +51,6 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image_desktop": "shopify://shop_images/Instagram_post_-_432_2.png",
-            "image_mobile": "shopify://shop_images/3_2_415ee7e9-854f-48b1-8aae-8e983dfdddc2.webp",
             "heading": "Dar samuraja: 1+1=3",
             "text": "na cały asortyment",
             "text_position": "middle",
@@ -80,8 +76,6 @@
         "slideshow_item_TRpjQr": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/08adc42ec594bda2be78a9e4a5008dc6_df4f15f5-69aa-4261-a78b-60a68cccbc57.png",
-            "mobile_image": "shopify://shop_images/test_square_f03e5c55-12ed-4c51-a57e-5059c9fb6b5c.png",
             "color_scheme": "dark",
             "heading": "Darmowa dostawa",
             "text": "<p>na wszystkie zamówienia</p>",
