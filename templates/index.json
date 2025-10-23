@@ -622,7 +622,9 @@
         },
         "instagram_collage_image_xcmWwN": {
           "type": "instagram-collage_image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/3_tur.webp"
+          }
         },
         "instagram_collage_image_j3Dz4q": {
           "type": "instagram-collage_image",
