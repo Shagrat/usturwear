@@ -610,7 +610,9 @@
       "blocks": {
         "instagram_collage_image_FfFpAb": {
           "type": "instagram-collage_image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/1_tur.webp"
+          }
         },
         "instagram_collage_image_Gf3wrV": {
           "type": "instagram-collage_image",
