@@ -628,7 +628,9 @@
         },
         "instagram_collage_image_j3Dz4q": {
           "type": "instagram-collage_image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/4_tur.webp"
+          }
         }
       },
       "block_order": [
