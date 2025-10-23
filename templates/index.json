@@ -45,6 +45,8 @@
         "block_2": {
           "type": "slideshow_item",
           "settings": {
+            "image": "shopify://shop_images/baner_zhinochiy.png",
+            "mobile_image": "shopify://shop_images/baner_zhin_mob.png",
             "color_scheme": "dark",
             "heading": "women`s clothing",
             "text": "",
