@@ -61,6 +61,8 @@
         "block_3": {
           "type": "slideshow_item",
           "settings": {
+            "image": "shopify://shop_images/Baner_Aksesuari.png",
+            "mobile_image": "shopify://shop_images/Baner_aksesuari_mob.png",
             "color_scheme": "dark",
             "heading": "accessories",
             "text": "",
