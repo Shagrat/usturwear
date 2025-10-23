@@ -221,6 +221,8 @@
         "button_label": "Shop new arrivals",
         "button_link": "shopify://collections/nowe-produkty",
         "image_position": "left",
+        "image_before": "shopify://shop_images/12_f17dde12-7b86-46e9-8df4-a2c01e470b27.webp",
+        "image_after": "shopify://shop_images/13_053f2dad-0c8a-4c1a-9daf-9bbc980a8f6b.webp",
         "product": "bomber-dexter",
         "image_ratio": "portrait",
         "image_fit": "contain",
