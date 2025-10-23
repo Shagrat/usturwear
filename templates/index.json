@@ -60,7 +60,7 @@
             "color_scheme": "dark",
             "heading": "accessories",
             "text": "",
-            "button_label": "Przejdź do",
+            "button_label": "GO TO",
             "button_link": "shopify://pages/akcesoria",
             "button_style": "primary",
             "button_arrow": true,
