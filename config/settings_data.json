@@ -85,7 +85,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
     "enable_search_modal": true,
-    "search_modal_heading": "<p>SZUKAJ</p>",
+    "search_modal_heading": "",
     "search_modal_image_ratio": "square",
     "search_modal_collections_heading": "<p>Categories</p>",
     "pagination_type": "pagination",
