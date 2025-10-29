@@ -26,14 +26,14 @@
         "mega_menu_collection_TVYgGA": {
           "type": "mega_menu_collection",
           "settings": {
-            "menu_trigger": "Mężczyzna",
+            "menu_trigger": "Man",
             "collection": ""
           }
         },
         "mega_menu_collection_e6NTbB": {
           "type": "mega_menu_collection",
           "settings": {
-            "menu_trigger": "Kobieta",
+            "menu_trigger": "Woman",
             "collection": ""
           }
         }
