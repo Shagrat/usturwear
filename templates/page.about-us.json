@@ -23,8 +23,6 @@
         "slideshow_item_NbzmjG": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Frame-2-scaled.webp",
-            "mobile_image": "shopify://shop_images/Frame-2.png",
             "color_scheme": "dark",
             "heading": "",
             "text": "",
@@ -70,7 +68,7 @@
         "order": "text-first",
         "content_position": "center",
         "subheading": "",
-        "heading": "Marka technologicznej odzieży <strong>TUR WEAR </strong>wita w świecie przyszłości i transformacji",
+        "heading": "The techwear brand <strong>TUR WEAR</strong> welcomes you to the world of future and transformation",
         "object_fit": "cover",
         "image_size": "large",
         "padding_top": 0,
@@ -88,7 +86,6 @@
           "type": "ai_gen_block_c4f2e98",
           "settings": {
             "content": "<h2>PRZESŁANIE OD WŁAŚCICIELA MARKI — SERHII SHYROKOSTUPA</h2>",
-            "image": "shopify://shop_images/2024-07-08-15.07.48.jpg",
             "layout": "text_image",
             "mobile_image_first": false,
             "image_aspect_ratio": "4/3",
@@ -153,7 +150,6 @@
         "terrikon_card_xaekmN": {
           "type": "terrikon_card",
           "settings": {
-            "image": "shopify://shop_images/techwear-2-scaled.webp",
             "alt_text": "",
             "caption": "Techwear",
             "link": "shopify://collections/techwear-style",
@@ -163,7 +159,6 @@
         "terrikon_card_DrpchF": {
           "type": "terrikon_card",
           "settings": {
-            "image": "shopify://shop_images/modern-samurai-2-scaled.webp",
             "alt_text": "",
             "caption": "Urban Samurai",
             "link": "shopify://collections/modern-samurai-style",
@@ -173,7 +168,6 @@
         "terrikon_card_Afj9dC": {
           "type": "terrikon_card",
           "settings": {
-            "image": "shopify://shop_images/darkwear-2-scaled.webp",
             "alt_text": "",
             "caption": "Darkwear",
             "link": "shopify://collections/darkwear-style",
@@ -183,7 +177,6 @@
         "terrikon_card_FHL8yU": {
           "type": "terrikon_card",
           "settings": {
-            "image": "shopify://shop_images/cyber-2-scaled.webp",
             "alt_text": "",
             "caption": "Cyberpunk",
             "link": "shopify://collections/cyberpunk-style",
@@ -236,7 +229,6 @@
         "card_UL3RDc": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/photo_2025-08-04_10-52-24.jpg",
             "alt_text": "",
             "caption": "Rok 2015"
           }
@@ -244,7 +236,6 @@
         "card_dRdARf": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/photo_2025-08-04_10-52-23.jpg",
             "alt_text": "",
             "caption": "Rok 2016"
           }
@@ -252,7 +243,6 @@
         "card_4QUxzP": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/photo_2025-08-04_10-52-25-560x839.jpg",
             "alt_text": "",
             "caption": "Rok 2016"
           }
@@ -260,7 +250,6 @@
         "card_AQkdPE": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/1-1_ade34500-45d9-46cd-81d0-c75ccb77b6b9.webp",
             "alt_text": "",
             "caption": "Rok 2021"
           }
@@ -268,7 +257,6 @@
         "card_Q37BAa": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/151.jpg",
             "alt_text": "",
             "caption": "Rok 2021"
           }
@@ -276,7 +264,6 @@
         "card_jFFxqx": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/3_d5a8281a-a883-4114-b8c2-0532c7fb1ef8.webp",
             "alt_text": "",
             "caption": "Rok 2023"
           }
@@ -284,7 +271,6 @@
         "card_jbam3q": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/2_e85c36f3-1bb8-4a47-bfd1-122fde721054.webp",
             "alt_text": "",
             "caption": "Rok 2024"
           }
@@ -292,7 +278,6 @@
         "card_NwpVfK": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/9451416-_-_-3.webp",
             "alt_text": "",
             "caption": "Rok 2025"
           }
@@ -347,7 +332,6 @@
       "name": "Fullwidth Image",
       "settings": {
         "label": "Fullwidth image",
-        "image": "shopify://shop_images/Minimalist_Timeline_Diagram_Concept_Map_2.webp",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0
