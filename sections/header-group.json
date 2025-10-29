@@ -58,7 +58,7 @@
     "header_mobile": {
       "type": "header-mobile",
       "settings": {
-        "height": 120,
+        "height": 65,
         "logo": "shopify://shop_images/tur_logo.svg",
         "logo_2": "shopify://shop_images/tur_logo_white.svg",
         "logo_width": 50,
