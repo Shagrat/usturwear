@@ -23,6 +23,8 @@
         "slideshow_item_NbzmjG": {
           "type": "slideshow_item",
           "settings": {
+            "image": "shopify://shop_images/Frame-2-scaled.webp",
+            "mobile_image": "shopify://shop_images/Frame-2.png",
             "color_scheme": "dark",
             "heading": "",
             "text": "",
