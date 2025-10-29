@@ -345,6 +345,7 @@
       "name": "Fullwidth Image",
       "settings": {
         "label": "Fullwidth image",
+        "image": "shopify://shop_images/Minimalist_Timeline_Diagram_Concept_Map_1.webp",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0
