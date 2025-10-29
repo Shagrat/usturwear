@@ -234,6 +234,7 @@
         "card_UL3RDc": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-24.jpg",
             "alt_text": "",
             "caption": "Year 2015"
           }
@@ -241,6 +242,15 @@
         "card_dRdARf": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-23.jpg",
+            "alt_text": "",
+            "caption": "Year 2016"
+          }
+        },
+        "card_hY8F7d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/photo_2025-08-04_10-52-25.jpg",
             "alt_text": "",
             "caption": "Year 2016"
           }
@@ -248,13 +258,15 @@
         "card_4QUxzP": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/1-1_ddc5a75d-227d-485c-b641-c6878233958f.webp",
             "alt_text": "",
-            "caption": "Year 2016"
+            "caption": "Year 2021"
           }
         },
         "card_AQkdPE": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/Most-151.jpg",
             "alt_text": "",
             "caption": "Year 2021"
           }
@@ -262,6 +274,7 @@
         "card_Q37BAa": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/3_1d18583e-e4a1-4cda-be43-d3b51faeebc4.webp",
             "alt_text": "",
             "caption": "Year 2021"
           }
@@ -269,6 +282,7 @@
         "card_jFFxqx": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/2_12c06adf-0ce7-4884-8a53-56662bd4dda5.webp",
             "alt_text": "",
             "caption": "Year 2023"
           }
@@ -276,6 +290,7 @@
         "card_jbam3q": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/9451416-Dlya-katalogu-3.webp",
             "alt_text": "",
             "caption": "Year 2024"
           }
@@ -291,6 +306,7 @@
       "block_order": [
         "card_UL3RDc",
         "card_dRdARf",
+        "card_hY8F7d",
         "card_4QUxzP",
         "card_AQkdPE",
         "card_Q37BAa",
