@@ -72,7 +72,7 @@
 						assign sizes = '100vw'
 					%}
 					
-					{% assign image_style = 'object-fit: cover;' %}
+					{% assign image_style = 'object-fit: contain;' %}
 					{{
 						collectionImg
 						| image_url: width: 3840
