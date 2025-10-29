@@ -276,7 +276,7 @@
           "settings": {
             "image": "shopify://shop_images/3_1d18583e-e4a1-4cda-be43-d3b51faeebc4.webp",
             "alt_text": "",
-            "caption": "Year 2021"
+            "caption": "Year 2023"
           }
         },
         "card_jFFxqx": {
@@ -284,20 +284,13 @@
           "settings": {
             "image": "shopify://shop_images/2_12c06adf-0ce7-4884-8a53-56662bd4dda5.webp",
             "alt_text": "",
-            "caption": "Year 2023"
+            "caption": "Year 2024"
           }
         },
         "card_jbam3q": {
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/9451416-Dlya-katalogu-3.webp",
-            "alt_text": "",
-            "caption": "Year 2024"
-          }
-        },
-        "card_NwpVfK": {
-          "type": "card",
-          "settings": {
             "alt_text": "",
             "caption": "Year 2025"
           }
@@ -311,8 +304,7 @@
         "card_AQkdPE",
         "card_Q37BAa",
         "card_jFFxqx",
-        "card_jbam3q",
-        "card_NwpVfK"
+        "card_jbam3q"
       ],
       "name": "Grid Images (compact)",
       "settings": {
