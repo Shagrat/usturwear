@@ -15,8 +15,8 @@
         "slideshow_item_mx8Cbm": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/baner_11.png",
-            "mobile_image": "shopify://shop_images/baner_mob.png",
+            "image": "shopify://shop_images/4e2cae8b4f0a4a248b71b77710d4a39d.webp",
+            "mobile_image": "shopify://shop_images/2_5af19edc-748a-43cb-9de3-94fa77c655fe.webp",
             "color_scheme": "dark",
             "heading": "new products",
             "text": "",
@@ -31,8 +31,8 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_cholovichiy.png",
-            "mobile_image": "shopify://shop_images/Baner_chol_mob.png",
+            "image": "shopify://shop_images/3ffb4437bda510b2a38294311ce07a70.webp",
+            "mobile_image": "shopify://shop_images/2_cc577b16-847d-4952-a294-3ff073255ce4.webp",
             "color_scheme": "dark",
             "heading": "men’s clothing",
             "text": "",
@@ -47,8 +47,8 @@
         "block_2": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/baner_zhinochiy.png",
-            "mobile_image": "shopify://shop_images/baner_zhin_mob.png",
+            "image": "shopify://shop_images/169bc4ac50d01ebb250b644f16c7e826.webp",
+            "mobile_image": "shopify://shop_images/2_b39e2b16-e54b-4e63-ac91-e2456a9fa221.webp",
             "color_scheme": "dark",
             "heading": "women`s clothing",
             "text": "",
@@ -63,8 +63,8 @@
         "block_3": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_Aksesuari.png",
-            "mobile_image": "shopify://shop_images/Baner_aksesuari_mob.png",
+            "image": "shopify://shop_images/IMG_0185.webp",
+            "mobile_image": "shopify://shop_images/3_d6029411-cab3-4581-8dfe-fdf925975d67.webp",
             "color_scheme": "dark",
             "heading": "accessories",
             "text": "",
