@@ -64,7 +64,7 @@
         "logo_width": 50,
         "logo_position": "center",
         "menu": "main-menu",
-        "heading": "Main",
+        "heading": "Main menu",
         "sticky_header_type": "on-scroll-up",
         "enable_country_selector": true,
         "enable_language_selector": true,
