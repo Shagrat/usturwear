@@ -8,9 +8,15 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "us": {
-      "parent": "@default"
+  "parent": "page.odziez-wierzchnia-dla-kob.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "collection_grid_4rGHWH": {
+      "settings": {
+        "heading": "Tops"
+      }
     }
   }
 }
