@@ -167,31 +167,36 @@
         "categories_jKDxgT": {
           "type": "categories",
           "settings": {
-            "collection": "techwear-style"
+            "collection": "techwear-style",
+            "collection_image": "shopify://shop_images/1.jpg"
           }
         },
         "categories_b4qVdR": {
           "type": "categories",
           "settings": {
-            "collection": "warcore-style"
+            "collection": "warcore-style",
+            "collection_image": "shopify://shop_images/2.jpg"
           }
         },
         "categories_9zrd3F": {
           "type": "categories",
           "settings": {
-            "collection": "darkwear-style"
+            "collection": "darkwear-style",
+            "collection_image": "shopify://shop_images/3.jpg"
           }
         },
         "categories_jUbDRH": {
           "type": "categories",
           "settings": {
-            "collection": "cyberpunk-style"
+            "collection": "cyberpunk-style",
+            "collection_image": "shopify://shop_images/4_20ebe0e8-4946-442c-995a-3230a671e9c5.jpg"
           }
         },
         "categories_xcqpPD": {
           "type": "categories",
           "settings": {
-            "collection": "modern-samurai-style"
+            "collection": "modern-samurai-style",
+            "collection_image": "shopify://shop_images/5_d153d546-e516-451b-9484-b8edf77792ef.jpg"
           }
         }
       },
