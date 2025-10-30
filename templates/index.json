@@ -493,10 +493,12 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/9_863d3cda-9f57-4a04-81a0-626d39334504.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
+            "author_image": "shopify://shop_images/10_6778109e-79e3-486a-b414-2297ed98f6e3.webp",
             "author_name": "@techwear_ninja",
             "author_position": "",
             "overlay_enable": false,
