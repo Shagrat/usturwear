@@ -160,7 +160,8 @@
         "categories_DjVWrY": {
           "type": "categories",
           "settings": {
-            "collection": "kapelusze-ta-czapki"
+            "collection": "kapelusze-ta-czapki",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_13.png"
           }
         }
       },
