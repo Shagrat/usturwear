@@ -49,6 +49,12 @@
           "settings": {
             "collection": "koszulki-dla-kobiet"
           }
+        },
+        "categories_YGUnpk": {
+          "type": "categories",
+          "settings": {
+            "collection": "harness-systems-and-vests"
+          }
         }
       },
       "block_order": [
@@ -56,7 +62,8 @@
         "categories_fTDnPg",
         "categories_XW7Mwk",
         "categories_LBn4P9",
-        "categories_Rzc9n7"
+        "categories_Rzc9n7",
+        "categories_YGUnpk"
       ],
       "settings": {
         "color_scheme": "color-background-1",
