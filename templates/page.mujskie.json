@@ -153,7 +153,8 @@
         "categories_YR8NBy": {
           "type": "categories",
           "settings": {
-            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami"
+            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_12.png"
           }
         },
         "categories_DjVWrY": {
