@@ -125,13 +125,15 @@
         "categories_9c3fpY": {
           "type": "categories",
           "settings": {
-            "collection": "szorty-i-kolarki-dla-kobiet"
+            "collection": "szorty-i-kolarki-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_21.png"
           }
         },
         "categories_9He3tC": {
           "type": "categories",
           "settings": {
-            "collection": "sukienki-i-spodnice-dla-kobiet"
+            "collection": "sukienki-i-spodnice-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_22.png"
           }
         },
         "categories_Nndt7c": {
