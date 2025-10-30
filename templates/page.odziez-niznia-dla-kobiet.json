@@ -38,12 +38,19 @@
             "collection": "sukienki-i-spodnice-dla-kobiet",
             "collection_image": "shopify://shop_images/turwear1857.webp"
           }
+        },
+        "categories_J3gdDj": {
+          "type": "categories",
+          "settings": {
+            "collection": "harness-systems-and-vests"
+          }
         }
       },
       "block_order": [
         "categories_VwWtya",
         "categories_9c3fpY",
-        "categories_DLyQCw"
+        "categories_DLyQCw",
+        "categories_J3gdDj"
       ],
       "settings": {
         "color_scheme": "color-background-1",

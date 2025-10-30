@@ -97,7 +97,8 @@
         "categories_zeVf4f": {
           "type": "categories",
           "settings": {
-            "collection": "spodnie-dla-mezczyzn"
+            "collection": "spodnie-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_4.png"
           }
         },
         "categories_j7pGqw": {
