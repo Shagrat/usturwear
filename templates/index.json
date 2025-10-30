@@ -509,10 +509,12 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/3_a26d5b7a-2e84-437c-af1b-3c22b9c0545a.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
+            "author_image": "shopify://shop_images/4_9cc9b957-6068-4c55-958d-62338a6ec975.webp",
             "author_name": "@juli.tattz",
             "author_position": "",
             "overlay_enable": false,
