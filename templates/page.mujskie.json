@@ -83,7 +83,8 @@
         "categories_GHxWkt": {
           "type": "categories",
           "settings": {
-            "collection": "odziez-wierzchnia-jesien-wiosna-dla-mezczyzn"
+            "collection": "odziez-wierzchnia-jesien-wiosna-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_1.png"
           }
         },
         "categories_hhDQHd": {
