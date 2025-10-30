@@ -90,7 +90,8 @@
         "categories_VwWtya": {
           "type": "categories",
           "settings": {
-            "collection": "spodnie-i-dzinsy-dla-kobiet"
+            "collection": "spodnie-i-dzinsy-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_17.png"
           }
         },
         "categories_mtahME": {
