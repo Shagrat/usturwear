@@ -83,7 +83,8 @@
         "categories_fTDnPg": {
           "type": "categories",
           "settings": {
-            "collection": "bluzy-dla-kobiet"
+            "collection": "bluzy-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_15.png"
           }
         },
         "categories_mtahME": {
