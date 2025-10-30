@@ -125,19 +125,15 @@
         "categories_XjQVPW": {
           "type": "categories",
           "settings": {
-            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn"
-          }
-        },
-        "categories_hEhxVg": {
-          "type": "categories",
-          "settings": {
-            "collection": "bielizna-dla-mezczyzn"
+            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_8.png"
           }
         },
         "categories_GPjCCa": {
           "type": "categories",
           "settings": {
-            "collection": "koszulki-dla-mezczyzn"
+            "collection": "koszulki-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_9.png"
           }
         },
         "categories_xt9NLW": {
@@ -174,7 +170,6 @@
         "categories_rUiyQ7",
         "categories_rRJEMb",
         "categories_XjQVPW",
-        "categories_hEhxVg",
         "categories_GPjCCa",
         "categories_xt9NLW",
         "categories_LNC6ae",
