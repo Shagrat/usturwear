@@ -118,7 +118,8 @@
         "categories_Rzc9n7": {
           "type": "categories",
           "settings": {
-            "collection": "koszulki-dla-kobiet"
+            "collection": "koszulki-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_20.png"
           }
         },
         "categories_9c3fpY": {
