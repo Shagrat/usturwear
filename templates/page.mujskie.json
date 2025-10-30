@@ -139,7 +139,8 @@
         "categories_xt9NLW": {
           "type": "categories",
           "settings": {
-            "collection": "szorty-dla-mezczyzn"
+            "collection": "szorty-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_10.png"
           }
         },
         "categories_LNC6ae": {
