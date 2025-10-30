@@ -477,10 +477,12 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/7_3b774d1e-8594-485a-a68b-476cadfbebe2.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
+            "author_image": "shopify://shop_images/8_31c8d8bc-49f6-45ef-b90c-a379eea313c0.webp",
             "author_name": "@dalohim",
             "author_position": "",
             "overlay_enable": false,
