@@ -38,12 +38,6 @@
             "collection": "spodnie-sportowe-dla-mezczyzn"
           }
         },
-        "categories_p4GrpB": {
-          "type": "categories",
-          "settings": {
-            "collection": "bielizna-dla-mezczyzn"
-          }
-        },
         "categories_PQDVAm": {
           "type": "categories",
           "settings": {
@@ -55,7 +49,6 @@
         "categories_YLtrzm",
         "categories_db3ePP",
         "categories_RTJCb7",
-        "categories_p4GrpB",
         "categories_PQDVAm"
       ],
       "settings": {
