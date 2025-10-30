@@ -541,10 +541,12 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/9_82b7c9bf-dcb4-4a5b-9809-977dff704194.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
+            "author_image": "shopify://shop_images/4_07ce1c55-02ea-461d-9551-8ca68d13adc5.webp",
             "author_name": "@modelcruella",
             "author_position": "",
             "overlay_enable": false,
