@@ -146,7 +146,8 @@
         "categories_LNC6ae": {
           "type": "categories",
           "settings": {
-            "collection": "obuwie-dla-mezczyzn"
+            "collection": "obuwie-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_11.png"
           }
         },
         "categories_YR8NBy": {
