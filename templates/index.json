@@ -525,10 +525,12 @@
           "type": "testimonials_slide",
           "settings": {
             "color_scheme": "color-background-4",
+            "image": "shopify://shop_images/1_2_7742c5bd-b110-4ddd-9c8f-bade643ef5f4.webp",
             "subheading": "",
             "text": "",
             "enable_stars": false,
             "rating": 5,
+            "author_image": "shopify://shop_images/2_2_635010db-9b82-4049-b33c-6db7efc11da4.webp",
             "author_name": "@czxrspired_417",
             "author_position": "",
             "overlay_enable": false,
