@@ -76,7 +76,8 @@
         "categories_YKbrC8": {
           "type": "categories",
           "settings": {
-            "collection": "kurtki-anorakі-i-wiatrowki"
+            "collection": "kurtki-anorakі-i-wiatrowki",
+            "collection_image": "shopify://shop_images/Anoraki_vitrivki.png"
           }
         },
         "categories_GHxWkt": {
