@@ -87,22 +87,23 @@
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_15.png"
           }
         },
+        "categories_VwWtya": {
+          "type": "categories",
+          "settings": {
+            "collection": "spodnie-i-dzinsy-dla-kobiet"
+          }
+        },
         "categories_mtahME": {
           "type": "categories",
           "settings": {
-            "collection": "body-dla-kobiet"
+            "collection": "body-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_16.png"
           }
         },
         "categories_LBn4P9": {
           "type": "categories",
           "settings": {
             "collection": "topy-i-longsleeve-dla-kobiet"
-          }
-        },
-        "categories_VwWtya": {
-          "type": "categories",
-          "settings": {
-            "collection": "spodnie-i-dzinsy-dla-kobiet"
           }
         },
         "categories_XW7Mwk": {
@@ -139,9 +140,9 @@
       "block_order": [
         "categories_nk3VKR",
         "categories_fTDnPg",
+        "categories_VwWtya",
         "categories_mtahME",
         "categories_LBn4P9",
-        "categories_VwWtya",
         "categories_XW7Mwk",
         "categories_Rzc9n7",
         "categories_9c3fpY",
