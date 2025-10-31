@@ -107,7 +107,7 @@
         "button_link": "",
         "product_list": [
           "parka-bozo",
-          "spodnie-royce",
+          "cargo-pants-royce",
           "plecak-pancerz",
           "bomber-dexter"
         ],
@@ -345,7 +345,7 @@
           "settings": {
             "position_x": 78,
             "position_y": 44,
-            "product": "spodnie-royce",
+            "product": "cargo-pants-royce",
             "show_secondary_image": false,
             "show_sku": false,
             "show_vendor": true,
