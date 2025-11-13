@@ -31,8 +31,8 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_zhin_1769b9e8-7048-4a40-ad2b-e8f7b1705ef5.jpg",
-            "mobile_image": "shopify://shop_images/baner_mob_zhin_33360125-5c7c-46a6-8c9d-0ebfb527d5ca.png",
+            "image": "shopify://shop_images/Baner_deskop_zhin.webp",
+            "mobile_image": "shopify://shop_images/baner_mob_zhin.webp",
             "color_scheme": "dark",
             "heading": "women`s clothing",
             "text": "",
