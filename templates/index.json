@@ -21,7 +21,7 @@
             "heading": "men’s clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "shopify://pages/mens-clothing",
+            "button_link": "shopify://collections/oferty-specjalne",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
