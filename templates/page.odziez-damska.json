@@ -76,8 +76,13 @@
         "categories_nk3VKR": {
           "type": "categories",
           "settings": {
-            "collection": "odziez-wierzchnia-dla-kobiet",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_14.png"
+            "collection": "odziez-wierzchnia-dla-kobiet"
+          }
+        },
+        "categories_4GETBL": {
+          "type": "categories",
+          "settings": {
+            "collection": "anoraks-and-windbreakers"
           }
         },
         "categories_fTDnPg": {
@@ -146,6 +151,7 @@
       },
       "block_order": [
         "categories_nk3VKR",
+        "categories_4GETBL",
         "categories_fTDnPg",
         "categories_VwWtya",
         "categories_mtahME",
