@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Baner_deskop_chol.webp",
             "mobile_image": "shopify://shop_images/baner_mob_chol.webp",
             "color_scheme": "dark",
-            "heading": "men’s clothing",
+            "heading": "",
             "text": "",
             "button_label": "GO TO",
             "button_link": "shopify://collections/oferty-specjalne",
@@ -30,6 +30,7 @@
         },
         "block_1": {
           "type": "slideshow_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Baner_deskop_zhin.webp",
             "mobile_image": "shopify://shop_images/baner_mob_zhin.webp",
