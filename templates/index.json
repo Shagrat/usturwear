@@ -44,6 +44,22 @@
             "overlay_opacity": 10
           }
         },
+        "slideshow_item_iUV9eX": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/noktyurnal_3.webp",
+            "mobile_image": "shopify://shop_images/mob3.webp",
+            "color_scheme": "dark",
+            "heading": "Nocturnal by TUR",
+            "text": "",
+            "button_label": "Go to",
+            "button_link": "shopify://collections/nocturnal",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        },
         "block_2": {
           "type": "slideshow_item",
           "disabled": true,
@@ -81,6 +97,7 @@
       "block_order": [
         "slideshow_item_mx8Cbm",
         "block_1",
+        "slideshow_item_iUV9eX",
         "block_2",
         "block_3"
       ],
