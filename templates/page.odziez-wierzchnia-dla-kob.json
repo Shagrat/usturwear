@@ -26,6 +26,12 @@
             "collection": "odziez-wierzchnia-dla-kobiet"
           }
         },
+        "categories_WPt3ea": {
+          "type": "categories",
+          "settings": {
+            "collection": "anoraks-and-windbreakers"
+          }
+        },
         "categories_fTDnPg": {
           "type": "categories",
           "settings": {
@@ -59,6 +65,7 @@
       },
       "block_order": [
         "categories_nk3VKR",
+        "categories_WPt3ea",
         "categories_fTDnPg",
         "categories_XW7Mwk",
         "categories_LBn4P9",
