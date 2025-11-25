@@ -51,7 +51,7 @@
           "type": "about",
           "settings": {
             "about_heading": "Shipping, payment and returns",
-            "about_heading_content": "<p>Online payment – by card or PayPal<br/><br/>Shipping within 5–7 business days<br/><br/>Return within 14 days – unused product with tags<br/><br/>No returns on: underwear, tights, swimwear, and other personal items<br/><br/>30-day warranty<br/><br/>To make a return, write to <a><strong>turwear.sales@gmail.com</strong></a>, providing your order number or contact details</p>",
+            "about_heading_content": "<p><strong>Payments and Shipping</strong><br/><br/>• Online payment: by card or via PayPal<br/><br/>• Size guarantee: our consultants contact every customer to confirm measurements before shipping<br/><br/>• Processing time: 5–7 business days</p><p>⸻</p><p><strong>Returns and Exchanges</strong><br/><br/>• Returns within 14 days<br/><br/>The product must be unused and have original tags<br/><br/>• No returns for:<br/><br/>underwear, tights, swimwear, and other personal-use items<br/><br/>• Warranty: 30 days</p><p>To request a return, please contact us by email:<br/><br/>📧 <a><strong>turwear.sales@gmail.com</strong></a><br/><br/>(with your order number or contact details)</p>",
             "default_open": false
           }
         },
@@ -136,9 +136,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
