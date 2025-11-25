@@ -15,7 +15,7 @@
         "slideshow_item_mx8Cbm": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_chol.webp",
+            "image": "shopify://shop_images/Baner_deskop_chol.png",
             "mobile_image": "shopify://shop_images/baner_mob_chol.webp",
             "color_scheme": "dark",
             "heading": "",
