@@ -4683,3 +4683,11 @@ details[open] > .header__account-modal {
 .cc-banner.cc-bottom.cc-default .cc-btn{
   min-height: 30px;
 }
+
+.header__nav .oferty-specjalne>a{
+  color: #b61714;
+}
+
+.header-mobile__menu-main .oferty-specjalne>a{
+  color: #b61714;
+}
