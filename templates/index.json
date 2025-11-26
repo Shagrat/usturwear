@@ -21,7 +21,7 @@
             "heading": "Men's clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "shopify://collections/oferty-specjalne",
+            "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Man",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
