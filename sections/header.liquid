@@ -137,7 +137,7 @@
 						{%- if section.settings.menu != blank -%}
 						<ul class="header__list list-unstyled">
 							{%- for link in section.settings.menu.links -%}
-								<li class="{% if link.active %}current-link {% endif %} {% if link.links != blank %}have-submenu{% endif %}" data-hover-opacity="1">
+								<li class="{% if link.active %}current-link {% endif %} {% if link.links != blank %}have-submenu{% endif %} {{ link.handle }}" data-hover-opacity="1">
 										{%liquid
 											for block in section.blocks
 												assign menu_trigger = block.settings.menu_trigger | handle | strip

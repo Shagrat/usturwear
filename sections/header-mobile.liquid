@@ -164,7 +164,7 @@
 			<li id="menu-main" style="display:block">
 				<ul class="header-mobile__menu-main list-unstyled">
 					{%- for link in section.settings.menu.links -%}
-						<li class="{% if link.active %}current-link {% endif %} {% if link.links != blank %}have-submenu{% endif %}">
+						<li class="{% if link.active %}current-link {% endif %} {% if link.links != blank %}have-submenu{% endif %} {{ link.handle }}">
 							{% if link.links != blank %}
 								<details>
 									<summary class="h6">
