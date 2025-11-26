@@ -30,12 +30,11 @@
         },
         "block_1": {
           "type": "slideshow_item",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_zhin.webp",
-            "mobile_image": "shopify://shop_images/baner_mob_zhin.webp",
+            "image": "shopify://shop_images/Baner_deskop_zhin_eb619d8d-9ee9-4966-9d61-0669c7782486.png",
+            "mobile_image": "shopify://shop_images/27d4e27747ca48b47b7ecffb0e30cfed.png",
             "color_scheme": "dark",
-            "heading": "women`s clothing",
+            "heading": "Women`s clothing",
             "text": "",
             "button_label": "GO TO",
             "button_link": "shopify://collections/oferty-specjalne",
