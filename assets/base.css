@@ -4684,10 +4684,10 @@ details[open] > .header__account-modal {
   min-height: 30px;
 }
 
-.header__nav .oferty-specjalne>a{
+.header__nav .sale>a{
   color: #b61714;
 }
 
-.header-mobile__menu-main .oferty-specjalne>a{
+.header-mobile__menu-main .sale>a{
   color: #b61714;
 }
