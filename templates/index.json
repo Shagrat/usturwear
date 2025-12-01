@@ -15,13 +15,13 @@
         "slideshow_item_mx8Cbm": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_cholovichiy.webp",
-            "mobile_image": "shopify://shop_images/Baner_chol_mob_2.webp",
+            "image": "shopify://shop_images/Baner_deskop_chol_35c5435f-8850-4914-a4e3-0a49687f1c54.webp",
+            "mobile_image": "shopify://shop_images/Baner_mob_chol_2.webp",
             "color_scheme": "dark",
             "heading": "Men's clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "shopify://pages/mens-clothing",
+            "button_link": "shopify://collections/odziez-wierzchnia-zimowa-dla-mezczyzn",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
