@@ -15,13 +15,13 @@
         "slideshow_item_mx8Cbm": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_chol.png",
-            "mobile_image": "shopify://shop_images/baner_mob_chol.webp",
+            "image": "shopify://shop_images/Baner_cholovichiy.webp",
+            "mobile_image": "shopify://shop_images/Baner_chol_mob_2.webp",
             "color_scheme": "dark",
             "heading": "Men's clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Man",
+            "button_link": "shopify://pages/mens-clothing",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
