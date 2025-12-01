@@ -31,13 +31,13 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_zhinochiy.webp",
-            "mobile_image": "shopify://shop_images/Baner_zhin_mob_2.webp",
+            "image": "shopify://shop_images/Baner_deskop_zhin_3.webp",
+            "mobile_image": "shopify://shop_images/Baner_mob_zhin_2.webp",
             "color_scheme": "dark",
             "heading": "Women`s clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "shopify://pages/womens-clothing",
+            "button_link": "shopify://collections/odziez-wierzchnia-dla-kobiet",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
