@@ -31,13 +31,13 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_zhin_eb619d8d-9ee9-4966-9d61-0669c7782486.png",
-            "mobile_image": "shopify://shop_images/27d4e27747ca48b47b7ecffb0e30cfed.png",
+            "image": "shopify://shop_images/Baner_zhinochiy.webp",
+            "mobile_image": "shopify://shop_images/Baner_zhin_mob_2.webp",
             "color_scheme": "dark",
             "heading": "Women`s clothing",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Woman",
+            "button_link": "shopify://pages/womens-clothing",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
