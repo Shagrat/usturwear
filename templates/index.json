@@ -44,6 +44,22 @@
             "overlay_opacity": 10
           }
         },
+        "block_2": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/169bc4ac50d01ebb250b644f16c7e826.webp",
+            "mobile_image": "shopify://shop_images/2_b39e2b16-e54b-4e63-ac91-e2456a9fa221.webp",
+            "color_scheme": "dark",
+            "heading": "accessories",
+            "text": "",
+            "button_label": "GO TO",
+            "button_link": "shopify://pages/accessories",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 10
+          }
+        },
         "slideshow_item_iUV9eX": {
           "type": "slideshow_item",
           "settings": {
@@ -58,23 +74,6 @@
             "button_arrow": true,
             "overlay_enable": true,
             "overlay_opacity": 20
-          }
-        },
-        "block_2": {
-          "type": "slideshow_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/169bc4ac50d01ebb250b644f16c7e826.webp",
-            "mobile_image": "shopify://shop_images/2_b39e2b16-e54b-4e63-ac91-e2456a9fa221.webp",
-            "color_scheme": "dark",
-            "heading": "accessories",
-            "text": "",
-            "button_label": "GO TO",
-            "button_link": "shopify://pages/accessories",
-            "button_style": "primary",
-            "button_arrow": true,
-            "overlay_enable": true,
-            "overlay_opacity": 10
           }
         },
         "block_3": {
@@ -97,8 +96,8 @@
       "block_order": [
         "slideshow_item_mx8Cbm",
         "block_1",
-        "slideshow_item_iUV9eX",
         "block_2",
+        "slideshow_item_iUV9eX",
         "block_3"
       ],
       "settings": {
