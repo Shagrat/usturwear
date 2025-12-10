@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Baner_deskop_chol_3.webp",
             "mobile_image": "shopify://shop_images/baner_mob_zhin_6.webp",
             "color_scheme": "dark",
-            "heading": "1+1=3",
+            "heading": "Men’s clothing",
             "text": "",
             "button_label": "GO TO",
             "button_link": "shopify://collections/odziez-wierzchnia-zimowa-dla-mezczyzn",
@@ -34,7 +34,7 @@
             "image": "shopify://shop_images/Baner_deskop_zhin_3_164e04ca-ab68-447c-9826-baf3c708c5e5.webp",
             "mobile_image": "shopify://shop_images/baner_mob_zhin_-2.webp",
             "color_scheme": "dark",
-            "heading": "1+1=3",
+            "heading": "Women’s clothing",
             "text": "",
             "button_label": "GO TO",
             "button_link": "shopify://collections/odziez-wierzchnia-dla-kobiet",
@@ -46,6 +46,7 @@
         },
         "block_2": {
           "type": "slideshow_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Baner_deskop_aksesuar.webp",
             "mobile_image": "shopify://shop_images/baner_mob_zhin_-1.webp",
