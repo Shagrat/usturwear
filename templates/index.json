@@ -15,8 +15,8 @@
         "slideshow_item_mx8Cbm": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_chol_3.webp",
-            "mobile_image": "shopify://shop_images/baner_mob_zhin_6.webp",
+            "image": "shopify://shop_images/Baner_chol_deskop.png",
+            "mobile_image": "shopify://shop_images/Baner_mob_chol_3.png",
             "color_scheme": "dark",
             "heading": "Men’s clothing",
             "text": "",
