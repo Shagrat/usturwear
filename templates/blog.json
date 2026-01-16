@@ -14,14 +14,14 @@
       "settings": {
         "posts_per_page": 5,
         "per_row": 2,
-        "image_size": "small",
+        "image_size": "adapt",
         "show_image": true,
         "show_tags": true,
         "show_date": true,
         "show_author": false,
         "show_excerpt": false,
         "image_ratio": "landscape",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "margin_top": 0,
         "margin_bottom": 0
       }
