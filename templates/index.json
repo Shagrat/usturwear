@@ -439,7 +439,7 @@
         "button_style": "primary",
         "button_arrow": true,
         "video": "shopify://files/videos/hf_20260118_103135_abf3d4f4-551b-41ed-9221-c0395bc57d93.mp4",
-        "video_ratio": "1/1",
+        "video_ratio": "21/9",
         "video_fit": "cover",
         "overlay_enable": true,
         "overlay_opacity": 10,
