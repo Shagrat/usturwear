@@ -278,13 +278,13 @@
       "type": "featured-products",
       "settings": {
         "subheading": "New collection",
-        "heading": "NEW WARRIOR DROP",
-        "text": "<p>Military aesthetics. Urban rhythm.</p>",
+        "heading": "Nocturnal by TUR",
+        "text": "<p>Clothing without limits</p>",
         "product_list": [
-          "kurtka-softshell-warrior",
-          "spodnie-softshell-warrior",
-          "kurtka-przejsciowa-z-mikropolarem-warrior",
-          "spodnie-apacze"
+          "oversized-hoodie-nctrnl-retro",
+          "oversized-bomber-nctrnl-bowl",
+          "longsleeve-nctrnl-metal-cat",
+          "oversized-hoodie-with-eyelets-nctrnl-angel"
         ],
         "per_row": 4,
         "mobile_card_count": true,
@@ -295,7 +295,7 @@
         "image_ratio": "portrait",
         "image_fit": "contain",
         "button_label": "Go to",
-        "button_link": "shopify://collections/nowe-produkty",
+        "button_link": "shopify://collections/nocturnal",
         "button_style": "primary",
         "button_arrow": true,
         "padding_top": 50,
