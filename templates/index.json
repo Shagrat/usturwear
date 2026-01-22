@@ -423,6 +423,30 @@
         "margin_bottom": 0
       }
     },
+    "video_banner_KgXytP": {
+      "type": "video-banner",
+      "name": "t:sections.video-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "color-background-4",
+        "subheading": "Subheading",
+        "heading": "Some header for your collection",
+        "heading_size": "medium",
+        "text_information": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+        "text_align": "left",
+        "button_label": "Button label",
+        "button_link": "shopify://collections/nowe-produkty",
+        "button_style": "primary",
+        "button_arrow": true,
+        "video": "shopify://files/videos/IMG_3051.MOV",
+        "video_ratio": "adapt",
+        "video_fit": "cover",
+        "overlay_enable": true,
+        "overlay_opacity": 10,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
     "product_markers_zf3EeJ": {
       "type": "product-markers",
       "blocks": {
@@ -705,6 +729,7 @@
     "featured_products_jpCwD6",
     "countdown_BnXVtd",
     "product_markers_cTdk77",
+    "video_banner_KgXytP",
     "product_markers_zf3EeJ",
     "testimonials_QFU9Dr",
     "instagram_collage_RtgfCC"
