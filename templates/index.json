@@ -425,6 +425,7 @@
     },
     "video_banner_KgXytP": {
       "type": "video-banner",
+      "disabled": true,
       "name": "t:sections.video-banner.presets.name",
       "settings": {
         "full_width": true,
