@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Baner_chol_deskop.png",
             "mobile_image": "shopify://shop_images/Baner_mob_chol_3.png",
             "color_scheme": "dark",
-            "heading": "Men’s clothing",
+            "heading": "TOTAL SALE",
             "text": "",
             "button_label": "GO TO",
             "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Man",
@@ -34,7 +34,7 @@
             "image": "shopify://shop_images/Baner_zhin_deskop.png",
             "mobile_image": "shopify://shop_images/Baner_mob_zhin_7.png",
             "color_scheme": "dark",
-            "heading": "Women’s clothing",
+            "heading": "TOTAL SALE",
             "text": "",
             "button_label": "GO TO",
             "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Woman",
@@ -42,6 +42,38 @@
             "button_arrow": true,
             "overlay_enable": true,
             "overlay_opacity": 10
+          }
+        },
+        "slideshow_item_t3etA4": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Baner_2.webp",
+            "mobile_image": "shopify://shop_images/Baner_mob_chol_1.webp",
+            "color_scheme": "dark",
+            "heading": "Men’s pants",
+            "text": "",
+            "button_label": "GO TO",
+            "button_link": "shopify://collections/spodnie-dla-mezczyzn",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
+          }
+        },
+        "slideshow_item_U7UKja": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/Baner_3.webp",
+            "mobile_image": "shopify://shop_images/Baner_mob_chol_3be5da87-3cb2-4db4-bc42-12df5c1fdc6a.webp",
+            "color_scheme": "dark",
+            "heading": "Women’s balaclavas",
+            "text": "",
+            "button_label": "GO TO",
+            "button_link": "shopify://collections/kominiarki-i-czapki-z-uszami",
+            "button_style": "primary",
+            "button_arrow": true,
+            "overlay_enable": true,
+            "overlay_opacity": 20
           }
         },
         "block_2": {
@@ -98,6 +130,8 @@
       "block_order": [
         "slideshow_item_mx8Cbm",
         "block_1",
+        "slideshow_item_t3etA4",
+        "slideshow_item_U7UKja",
         "block_2",
         "slideshow_item_iUV9eX",
         "block_3"
