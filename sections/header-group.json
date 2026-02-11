@@ -13,11 +13,39 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "announcement_7FAwcC": {
+          "type": "announcement",
+          "name": "WINTER SALE – 60%",
+          "settings": {
+            "text": "<p><a href=\"https://turwear.tech/blogs/news/winter-sale-60\" title=\"https://turwear.tech/blogs/news/winter-sale-60\">WINTER SALE – 60%</a></p>"
+          }
+        },
+        "announcement_XkcA8f": {
+          "type": "announcement",
+          "name": "Free Shipping in the USA",
+          "settings": {
+            "text": "<p>Announcement text<a href=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\" title=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\">https://turwear.tech/blogs/news/free-shipping-in-the-usa</a></p>"
+          }
+        },
+        "announcement_HzY3Ux": {
+          "type": "announcement",
+          "name": "TUR WEAR Size Fit Guarantee",
+          "settings": {
+            "text": "<p><a href=\"https://turwear.tech/blogs/news/tur-wear-size-fit-guarantee\" title=\"https://turwear.tech/blogs/news/tur-wear-size-fit-guarantee\">TUR WEAR Size Fit Guarantee</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_7FAwcC",
+        "announcement_XkcA8f",
+        "announcement_HzY3Ux"
+      ],
       "settings": {
         "height": 40,
         "color_scheme": "dark",
-        "text": "<p>UP TO 60% off</p>",
-        "announcement_speed": 5
+        "announcement_speed": 12,
+        "show_navigation": true
       }
     },
     "header": {
