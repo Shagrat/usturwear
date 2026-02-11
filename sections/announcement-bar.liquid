@@ -9,6 +9,82 @@
   		--announcement-height: {{ section.settings.height }}px;
   	}
   }
+  
+  .announcement-bar__box {
+    position: relative;
+  }
+  
+  .announcement-bar__message {
+    position: relative;
+  }
+  
+  .announcement-bar__text {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .announcement-bar__text.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+  
+  .announcement-bar__navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .announcement-bar__button {
+    background: rgba(var(--color-foreground), 0.1);
+    border: none;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    color: rgb(var(--color-foreground));
+  }
+  
+  .announcement-bar__button:hover {
+    background: rgba(var(--color-foreground), 0.2);
+  }
+  
+  .announcement-bar__button:active {
+    transform: scale(0.95);
+  }
+  
+  .announcement-bar__button svg {
+    width: 10px;
+    height: 16px;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .announcement-bar__navigation {
+      padding: 0 5px;
+    }
+    .announcement-bar__button {
+      width: 28px;
+      height: 28px;
+    }
+  }
 </style>
 
 <div
@@ -17,41 +93,49 @@
   aria-label="{{ 'sections.header.announcement' | t }}"
   {{ block.shopify_attributes }}
 >
-  <div class="announcement-bar__box">
-    <div class="announcement-bar__message">
-      <div class="announcement-bar__text">
-        {{ section.settings.text }}
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="announcement-bar__slide"
-    data-announcement-speed="{{ section.settings.announcement_speed }}"
-    data-announcement-id="{{ section.id }}"
-  >
-    <div class="swiper container announcement-js-{{ section.id }}">
-      <div class="swiper-wrapper">
-        {%- if section.settings.text != blank -%}
-          {% for i in (1..10) %}
-            <div class="swiper-slide">
-              <div class="announcement-bar__text announcement__title">
-                <div class="announcement__item">
-                  {{ section.settings.text }}
-                </div>
-              </div>
+  {%- if section.blocks.size > 0 -%}
+    <div 
+      class="announcement-bar__box"
+      data-announcement-speed="{{ section.settings.announcement_speed }}"
+      data-announcement-count="{{ section.blocks.size }}"
+    >
+      <div class="announcement-bar__message">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.text != blank -%}
+            <div 
+              class="announcement-bar__text{% if forloop.first %} active{% endif %}" 
+              data-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.text }}
             </div>
-          {% endfor %}
-        {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
       </div>
+      
+      {%- if section.settings.show_navigation and section.blocks.size > 1 -%}
+        <div class="announcement-bar__navigation">
+          <button class="announcement-bar__button announcement-bar__button--prev" aria-label="Previous announcement">
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L2 8L8 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="announcement-bar__button announcement-bar__button--next" aria-label="Next announcement">
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L8 8L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      {%- endif -%}
     </div>
-  </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
   "class": "section-announcement",
+  "max_blocks": 10,
   "settings": [
     {
       "type": "range",
@@ -80,12 +164,6 @@
       ]
     },
     {
-      "type": "richtext",
-      "id": "text",
-      "default": "<p>For example, a test of the announcement of some news</p>",
-      "label": "t:sections.announcement-bar.settings.text.label"
-    },
-    {
       "type": "range",
       "id": "announcement_speed",
       "min": 0,
@@ -95,11 +173,45 @@
       "unit": "s",
       "label": "t:sections.announcement-bar.settings.ticker_speed.label",
       "info": "t:sections.announcement-bar.settings.ticker_speed.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Show navigation buttons",
+      "default": true,
+      "info": "Display previous/next buttons to manually control the slider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Announcement text</p>",
+          "label": "t:sections.announcement-bar.settings.text.label"
+        }
+      ]
     }
   ],
   "default": {
+    "blocks": [
+      {
+        "type": "announcement",
+        "settings": {
+          "text": "<p>For example, a test of the announcement of some news</p>"
+        }
+      },
+      {
+        "type": "announcement",
+        "settings": {
+          "text": "<p>Add multiple announcements to create a slider</p>"
+        }
+      }
+    ],
     "settings": {
-      "text": "<p>For example, a test of the announcement of some news</p>",
       "color_scheme": "dark"
     }
   }
