@@ -25,7 +25,7 @@
           "type": "announcement",
           "name": "Free Shipping in the USA",
           "settings": {
-            "text": "<p>Announcement text<a href=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\" title=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\">https://turwear.tech/blogs/news/free-shipping-in-the-usa</a></p>"
+            "text": "<p><a href=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\" title=\"https://turwear.tech/blogs/news/free-shipping-in-the-usa\">Free Shipping in the USA</a></p>"
           }
         },
         "announcement_HzY3Ux": {
