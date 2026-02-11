@@ -1,0 +1,493 @@
+{% comment %}
+  Terrikon B2B Contact Section
+{% endcomment %}
+
+{% stylesheet %}
+  .tur-b2b-contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .tur-b2b-contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tur-b2b-contact h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: left;
+    border-left: 4px solid #000;
+    padding-left: 16px;
+  }
+
+  .tur-contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .tur-contacts-box {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .tur-contacts-box p {
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+  }
+
+  .tur-contacts-box strong {
+    font-weight: 600;
+  }
+
+  .tur-contacts-box a {
+    color: #8B1818;
+    text-decoration: none;
+  }
+
+  .tur-contacts-box a:hover {
+    text-decoration: underline;
+  }
+
+  .tur-b2b-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tur-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tur-form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .tur-form-group label .required {
+    color: #e74c3c;
+  }
+
+  .tur-form-group input,
+  .tur-form-group select,
+  .tur-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .tur-form-group input:focus,
+  .tur-form-group select:focus,
+  .tur-form-group textarea:focus {
+    outline: none;
+    border-color: #8B1818;
+  }
+
+  .tur-form-group select {
+    cursor: pointer;
+    background: #fff;
+  }
+
+  .tur-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .tur-form-submit {
+    width: 100%;
+    padding: 15px;
+    background: #8B1818;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .tur-form-submit:hover {
+    background: #6d1212;
+  }
+
+  .tur-form-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+  .tur-form-message {
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .tur-form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  .tur-form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+
+  @media (max-width: 768px) {
+    .tur-b2b-contact {
+      padding: 40px 20px;
+    }
+
+    .tur-b2b-contact h2 {
+      font-size: 28px;
+    }
+
+    .tur-contact-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+{% endstylesheet %}
+
+<div class="tur-b2b-contact">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2>{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="tur-contact-wrapper">
+      <!-- Contact Info -->
+      <div class="tur-contacts-box">
+        {%- if section.settings.email != blank -%}
+          <p>
+            <strong>Email:</strong> 
+            <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.telegram != blank -%}
+          <p>
+            <strong>Telegram:</strong> 
+            <a href="https://t.me/{{ section.settings.telegram }}" target="_blank" rel="noopener">@{{ section.settings.telegram }}</a>
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.instagram != blank -%}
+          <p>
+            <strong>Instagram:</strong> 
+            <a href="https://instagram.com/{{ section.settings.instagram }}" target="_blank" rel="noopener">{{ section.settings.instagram }}</a>
+          </p>
+        {%- endif -%}
+      </div>
+
+      <!-- B2B Contact Form -->
+      <div class="tur-contacts-box">
+        <form id="tur-b2b-form" class="tur-b2b-form" data-store="{{ shop.permanent_domain }}" data-endpoint="{{ section.settings.wordpress_endpoint }}">
+          <div class="tur-form-group">
+            <label for="tur-name">{{ section.settings.label_name }} <span class="required">*</span></label>
+            <input type="text" id="tur-name" name="name" placeholder="{{ section.settings.placeholder_name }}" required>
+          </div>
+
+          <div class="tur-form-group">
+            <label for="tur-email">{{ section.settings.label_email }} <span class="required">*</span></label>
+            <input type="email" id="tur-email" name="email" placeholder="{{ section.settings.placeholder_email }}" required>
+          </div>
+
+          <div class="tur-form-group">
+            <label for="tur-phone">{{ section.settings.label_phone }} <span class="required">*</span></label>
+            <input type="tel" id="tur-phone" name="phone" placeholder="{{ section.settings.placeholder_phone }}" required>
+          </div>
+
+          <div class="tur-form-group">
+            <label for="tur-cooperation">{{ section.settings.label_cooperation }} <span class="required">*</span></label>
+            <select id="tur-cooperation" name="cooperation_format" required>
+              <option value="">{{ section.settings.placeholder_cooperation }}</option>
+              {%- assign options = section.settings.cooperation_options | newline_to_br | split: '<br />' -%}
+              {%- for option in options -%}
+                {%- assign trimmed_option = option | strip -%}
+                {%- if trimmed_option != blank -%}
+                  <option value="{{ trimmed_option }}">{{ trimmed_option }}</option>
+                {%- endif -%}
+              {%- endfor -%}
+            </select>
+          </div>
+
+          <div class="tur-form-group">
+            <label for="tur-comment">{{ section.settings.label_comment }}</label>
+            <textarea id="tur-comment" name="comment" placeholder="{{ section.settings.placeholder_comment }}"></textarea>
+          </div>
+
+          <button type="submit" class="tur-form-submit">{{ section.settings.button_text }}</button>
+          <div id="tur-form-message" class="tur-form-message"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const form = document.getElementById('tur-b2b-form');
+  if (!form) return;
+
+  const messageDiv = document.getElementById('tur-form-message');
+  const endpoint = form.dataset.endpoint;
+  const storeDomain = form.dataset.store;
+
+  // Get UTM parameters from URL
+  function getUTMParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      utm_source: params.get('utm_source') || '',
+      utm_medium: params.get('utm_medium') || '',
+      utm_campaign: params.get('utm_campaign') || '',
+      utm_content: params.get('utm_content') || '',
+      utm_term: params.get('utm_term') || ''
+    };
+  }
+
+  // Show message
+  function showMessage(message, type) {
+    messageDiv.textContent = message;
+    messageDiv.className = 'tur-form-message ' + type;
+    messageDiv.style.display = 'block';
+
+    if (type === 'success') {
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 5000);
+    }
+  }
+
+  // Form submission handler
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!endpoint) {
+      showMessage('{{ section.settings.error_no_endpoint }}', 'error');
+      return;
+    }
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = '{{ section.settings.button_sending }}';
+
+    const formData = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      phone: form.phone.value.trim(),
+      cooperation_format: form.cooperation_format.value,
+      comment: form.comment.value.trim(),
+      shopify_store: storeDomain,
+      ...getUTMParams()
+    };
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        showMessage('{{ section.settings.message_success }}', 'success');
+        form.reset();
+      } else {
+        showMessage('{{ section.settings.message_error }}: ' + (result.message || ''), 'error');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      showMessage('{{ section.settings.message_error_network }}', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "B2B Contact",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Контакти та запит на співпрацю"
+    },
+    {
+      "type": "header",
+      "content": "Contact Information"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+      "default": "tur.cooperation@gmail.com"
+    },
+    {
+      "type": "text",
+      "id": "telegram",
+      "label": "Telegram Username (without @)",
+      "default": "TUR_saless"
+    },
+    {
+      "type": "text",
+      "id": "instagram",
+      "label": "Instagram Username",
+      "default": "tur_cooperation"
+    },
+    {
+      "type": "header",
+      "content": "WordPress KeyCRM Bridge Settings"
+    },
+    {
+      "type": "url",
+      "id": "wordpress_endpoint",
+      "label": "WordPress Endpoint URL",
+      "info": "Full URL to your WordPress REST API endpoint (e.g., https://yoursite.com/wp-json/shopify-keycrm/v1/submit-form)",
+    },
+    {
+      "type": "header",
+      "content": "Form Field Labels"
+    },
+    {
+      "type": "text",
+      "id": "label_name",
+      "label": "Name Field Label",
+      "default": "Ваше ім'я"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_name",
+      "label": "Name Field Placeholder",
+      "default": "Іван Петренко"
+    },
+    {
+      "type": "text",
+      "id": "label_email",
+      "label": "Email Field Label",
+      "default": "E-mail"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_email",
+      "label": "Email Field Placeholder",
+      "default": "ivan@example.com"
+    },
+    {
+      "type": "text",
+      "id": "label_phone",
+      "label": "Phone Field Label",
+      "default": "Телефон"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_phone",
+      "label": "Phone Field Placeholder",
+      "default": "+380501234567"
+    },
+    {
+      "type": "text",
+      "id": "label_cooperation",
+      "label": "Cooperation Format Label",
+      "default": "Формат співпраці"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_cooperation",
+      "label": "Cooperation Format Placeholder",
+      "default": "Оберіть формат"
+    },
+    {
+      "type": "text",
+      "id": "label_comment",
+      "label": "Comment Field Label",
+      "default": "Коментар"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_comment",
+      "label": "Comment Field Placeholder",
+      "default": "Опишіть ваш запит..."
+    },
+    {
+      "type": "header",
+      "content": "Cooperation Format Options"
+    },
+    {
+      "type": "textarea",
+      "id": "cooperation_options",
+      "label": "Cooperation Options (one per line)",
+      "default": "Реалізація\nГурт\nДропшипінг\nКорпоративний мерч\nЩе не визначився(лась)",
+      "info": "Enter each option on a new line"
+    },
+    {
+      "type": "header",
+      "content": "Button & Messages"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Submit Button Text",
+      "default": "Відправити запит"
+    },
+    {
+      "type": "text",
+      "id": "button_sending",
+      "label": "Button Text While Sending",
+      "default": "Відправка..."
+    },
+    {
+      "type": "text",
+      "id": "message_success",
+      "label": "Success Message",
+      "default": "Дякуємо! Ваш запит успішно відправлено."
+    },
+    {
+      "type": "text",
+      "id": "message_error",
+      "label": "Error Message",
+      "default": "Помилка відправки"
+    },
+    {
+      "type": "text",
+      "id": "message_error_network",
+      "label": "Network Error Message",
+      "default": "Помилка з'єднання. Спробуйте пізніше."
+    },
+    {
+      "type": "text",
+      "id": "error_no_endpoint",
+      "label": "No Endpoint Error",
+      "default": "Endpoint не налаштовано. Зверніться до адміністратора."
+    }
+  ],
+  "presets": [
+    {
+      "name": "B2B Contact",
+      "category": "Terrikon B2B"
+    }
+  ]
+}
+{% endschema %}

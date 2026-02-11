@@ -1,0 +1,150 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "terrikon_b2b_hero": {
+      "type": "terrikon-b2b-hero",
+      "settings": {
+        "badge": "Współpraca B2B",
+        "title": "Współpraca z TUR",
+        "description": "Marka TUR to nie tylko odzież, to cały świat idei, inspiracji i unikalnych kolekcji. Jesteśmy otwarci na współpracę z tymi, którzy podzielają nasze wartości i dążą do tworzenia czegoś nowego."
+      }
+    },
+    "terrikon_b2b_formats": {
+      "type": "terrikon-b2b-formats",
+      "blocks": {
+        "format_1": {
+          "type": "format_card",
+          "settings": {
+            "card_title": "Realizacja",
+            "items": "Stała dostępność | Podpisanie umowy | Indywidualne warunki | Dodatkowa treść | Wspólne akcje"
+          }
+        },
+        "format_2": {
+          "type": "format_card",
+          "settings": {
+            "card_title": "Zespół",
+            "items": "Indywidualne warunki | Dostawa lub odbiór osobisty"
+          }
+        }
+      },
+      "block_order": [
+        "format_1",
+        "format_2"
+      ],
+      "settings": {
+        "title": "Formy współpracy i warunki"
+      }
+    },
+    "terrikon_b2b_advantages": {
+      "type": "terrikon-b2b-advantages",
+      "blocks": {
+        "advantage_1": {
+          "type": "advantage",
+          "settings": {
+            "text": "Własna produkcja – elastyczne warunki"
+          }
+        },
+        "advantage_2": {
+          "type": "advantage",
+          "settings": {
+            "text": "Szybka dostawa 10-14 dni do Europy"
+          }
+        },
+        "advantage_3": {
+          "type": "advantage",
+          "settings": {
+            "text": "Aktualny, nietuzinkowy design"
+          }
+        },
+        "advantage_4": {
+          "type": "advantage",
+          "settings": {
+            "text": "Stała dostępność produktów"
+          }
+        },
+        "advantage_5": {
+          "type": "advantage",
+          "settings": {
+            "text": "Aktualizacja kolekcji 2 razy w sezonie"
+          }
+        },
+        "advantage_6": {
+          "type": "advantage",
+          "settings": {
+            "text": "Branding dla partnerów"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_1",
+        "advantage_2",
+        "advantage_3",
+        "advantage_4",
+        "advantage_5",
+        "advantage_6"
+      ],
+      "settings": {
+        "title": "Zalety współpracy z TUR"
+      }
+    },
+    "terrikon_b2b_metrics": {
+      "type": "terrikon-b2b-metrics",
+      "blocks": {
+        "metric_1": {
+          "type": "metric",
+          "settings": {
+            "number": "40+",
+            "description": "Partnerzy w Europie"
+          }
+        },
+        "metric_2": {
+          "type": "metric",
+          "settings": {
+            "number": "Ponad 9 lat",
+            "description": "Doświadczenie w szyciu skomplikowanych modeli"
+          }
+        },
+        "metric_3": {
+          "type": "metric",
+          "settings": {
+            "number": "265 km / 185+",
+            "description": "Tkaniny i modele w produkcji"
+          }
+        }
+      },
+      "block_order": [
+        "metric_1",
+        "metric_2",
+        "metric_3"
+      ],
+      "settings": {
+        "title": "Nasze doświadczenie"
+      }
+    },
+    "terrikon_b2b_contact": {
+      "type": "terrikon-b2b-contact",
+      "settings": {
+        "title": "Kontakty i zapytanie o współpracę",
+        "email": "tur.cooperation@gmail.com",
+        "telegram": "TUR_saless",
+        "instagram": "tur_cooperation",
+        "form_snippet": ""
+      }
+    }
+  },
+  "order": [
+    "terrikon_b2b_hero",
+    "terrikon_b2b_formats",
+    "terrikon_b2b_advantages",
+    "terrikon_b2b_metrics",
+    "terrikon_b2b_contact"
+  ]
+}

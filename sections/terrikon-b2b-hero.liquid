@@ -1,0 +1,94 @@
+{% comment %}
+  Terrikon B2B Hero Section
+{% endcomment %}
+
+{% stylesheet %}
+  .tur-b2b-hero {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tur-badge {
+    display: inline-block;
+    background-color: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .tur-b2b-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+  }
+
+  .tur-b2b-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .tur-b2b-hero {
+      padding: 40px 20px;
+    }
+
+    .tur-b2b-hero h1 {
+      font-size: 32px;
+    }
+  }
+{% endstylesheet %}
+
+<div class="tur-b2b-hero">
+  {%- if section.settings.badge != blank -%}
+    <span class="tur-badge">{{ section.settings.badge }}</span>
+  {%- endif -%}
+  
+  {%- if section.settings.title != blank -%}
+    <h1>{{ section.settings.title }}</h1>
+  {%- endif -%}
+  
+  {%- if section.settings.description != blank -%}
+    <p>{{ section.settings.description }}</p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "B2B Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge Text",
+      "default": "B2B співпраця"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Співпраця з TUR"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Бренд TUR – це не просто одяг, це цілий всесвіт ідей, натхнення та унікальних колекцій. Ми відкриті до співпраці з тими, хто поділяє наші цінності та прагне створювати нове."
+    }
+  ],
+  "presets": [
+    {
+      "name": "B2B Hero",
+      "category": "Terrikon B2B"
+    }
+  ]
+}
+{% endschema %}

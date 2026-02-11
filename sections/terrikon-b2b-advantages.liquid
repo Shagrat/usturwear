@@ -1,0 +1,153 @@
+{% comment %}
+  Terrikon B2B Advantages Section
+{% endcomment %}
+
+{% stylesheet %}
+  .tur-b2b-advantages {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .tur-b2b-advantages .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tur-b2b-advantages h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: left;
+    border-left: 4px solid #000;
+    padding-left: 16px;
+  }
+
+  .tur-adv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .tur-adv-item {
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .tur-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .tur-b2b-advantages {
+      padding: 40px 20px;
+    }
+
+    .tur-b2b-advantages h2 {
+      font-size: 28px;
+    }
+
+    .tur-adv {
+      grid-template-columns: 1fr;
+    }
+  }
+{% endstylesheet %}
+
+<div class="tur-b2b-advantages">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2>{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="tur-adv">
+      {%- for block in section.blocks -%}
+        <div class="tur-adv-item" {{ block.shopify_attributes }}>
+          <div class="tur-dot"></div>
+          {{ block.settings.text }}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "B2B Advantages",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Переваги співпраці з TUR"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "advantage",
+      "name": "Advantage Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Advantage Text",
+          "default": "Власне виробництво – гнучкі умови"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "B2B Advantages",
+      "category": "Terrikon B2B",
+      "blocks": [
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Власне виробництво – гнучкі умови"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Швидка доставка 1-3 дні по Україні"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Актуальний, неординарний дизайн"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Постійна наявність товарів"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Оновлення колекцій 2 рази на сезон"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Брендування для партнерів"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

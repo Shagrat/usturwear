@@ -1,0 +1,160 @@
+{% comment %}
+  Terrikon B2B Metrics Section
+{% endcomment %}
+
+{% stylesheet %}
+  .tur-b2b-metrics {
+    padding: 60px 20px;
+  }
+
+  .tur-b2b-metrics .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tur-b2b-metrics h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: left;
+    border-left: 4px solid #000;
+    padding-left: 16px;
+  }
+
+  .tur-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .tur-metric {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 40px 32px;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .tur-metric .num {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    line-height: 1;
+  }
+
+  .tur-metric p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #e0e0e0;
+  }
+
+  @media (max-width: 992px) {
+    .tur-metrics {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tur-b2b-metrics {
+      padding: 40px 20px;
+    }
+
+    .tur-b2b-metrics h2 {
+      font-size: 28px;
+    }
+
+    .tur-metrics {
+      grid-template-columns: 1fr;
+    }
+
+    .tur-metric .num {
+      font-size: 36px;
+    }
+  }
+{% endstylesheet %}
+
+<div class="tur-b2b-metrics">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2>{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="tur-metrics">
+      {%- for block in section.blocks -%}
+        <div class="tur-metric" {{ block.shopify_attributes }}>
+          {%- if block.settings.number != blank -%}
+            <div class="num">{{ block.settings.number }}</div>
+          {%- endif -%}
+          
+          {%- if block.settings.description != blank -%}
+            <p>{{ block.settings.description }}</p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "B2B Metrics",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Наш досвід"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "metric",
+      "name": "Metric",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number/Metric",
+          "default": "40+"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Партнерів в Україні та за кордоном"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "B2B Metrics",
+      "category": "Terrikon B2B",
+      "blocks": [
+        {
+          "type": "metric",
+          "settings": {
+            "number": "40+",
+            "description": "Партнерів в Україні та за кордоном"
+          }
+        },
+        {
+          "type": "metric",
+          "settings": {
+            "number": "9+ років",
+            "description": "Досвіду у пошитті складних моделей"
+          }
+        },
+        {
+          "type": "metric",
+          "settings": {
+            "number": "265 км / 185+",
+            "description": "Тканини та моделей у виробництві"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

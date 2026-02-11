@@ -1,0 +1,173 @@
+{% comment %}
+  Terrikon B2B Formats Section
+{% endcomment %}
+
+{% stylesheet %}
+  .tur-b2b-formats {
+    padding: 60px 20px;
+  }
+
+  .tur-b2b-formats .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tur-b2b-formats h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: left;
+    border-left: 4px solid #000;
+    padding-left: 16px;
+  }
+
+  .tur-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .tur-card {
+    background-color: #8B1818;
+    color: #fff;
+    padding: 32px 24px;
+    border-radius: 8px;
+  }
+
+  .tur-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+  }
+
+  .tur-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tur-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .tur-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  @media (max-width: 992px) {
+    .tur-grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tur-b2b-formats {
+      padding: 40px 20px;
+    }
+
+    .tur-b2b-formats h2 {
+      font-size: 28px;
+    }
+
+    .tur-grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+{% endstylesheet %}
+
+<div class="tur-b2b-formats">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2>{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="tur-grid-3">
+      {%- for block in section.blocks -%}
+        <div class="tur-card" {{ block.shopify_attributes }}>
+          {%- if block.settings.card_title != blank -%}
+            <h3>{{ block.settings.card_title }}</h3>
+          {%- endif -%}
+          
+          {%- if block.settings.items != blank -%}
+            <ul class="tur-list">
+              {%- assign items_array = block.settings.items | split: '|' -%}
+              {%- for item in items_array -%}
+                <li>{{ item }}</li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "B2B Formats",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Формати співпраці та умови"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "format_card",
+      "name": "Format Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title",
+          "default": "Реалізація"
+        },
+        {
+          "type": "textarea",
+          "id": "items",
+          "label": "List Items (separate with |)",
+          "default": "Постійна наявність|Підписання договору|Індивідуальні умови|Додатковий контент|Спільні акції",
+          "info": "Use | (pipe) to separate items"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "B2B Formats",
+      "category": "Terrikon B2B",
+      "blocks": [
+        {
+          "type": "format_card",
+          "settings": {
+            "card_title": "Реалізація",
+            "items": "Постійна наявність|Підписання договору|Індивідуальні умови|Додатковий контент|Спільні акції"
+          }
+        },
+        {
+          "type": "format_card",
+          "settings": {
+            "card_title": "Гурт",
+            "items": "Індивідуальні умови|Доставка або самовивіз"
+          }
+        },
+        {
+          "type": "format_card",
+          "settings": {
+            "card_title": "Дропшипінг",
+            "items": "Каталог + контент|Вигрузки для маркетплейсів|Відправка від TUR|Виплати раз на тиждень"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
