@@ -136,7 +136,24 @@
         "email": "tur.cooperation@gmail.com",
         "telegram": "TUR_saless",
         "instagram": "tur_cooperation",
-        "form_snippet": ""
+        "wordpress_endpoint": "https://turwear.com/wp-json/shopify-keycrm/v1/submit-form",
+        "label_name": "Ваше ім'я",
+        "placeholder_name": "Іван Петренко",
+        "label_email": "E-mail",
+        "placeholder_email": "ivan@example.com",
+        "label_phone": "Телефон",
+        "placeholder_phone": "+380501234567",
+        "label_cooperation": "Формат співпраці",
+        "placeholder_cooperation": "Оберіть формат",
+        "label_comment": "Коментар",
+        "placeholder_comment": "Опишіть ваш запит...",
+        "cooperation_options": "Реалізація\nГурт\nДропшипінг\nКорпоративний мерч\nЩе не визначився(лась)",
+        "button_text": "Відправити запит",
+        "button_sending": "Відправка...",
+        "message_success": "Дякуємо! Ваш запит успішно відправлено.",
+        "message_error": "Помилка відправки",
+        "message_error_network": "Помилка. Спробуйте пізніше.",
+        "error_no_endpoint": "Endpoint не налаштовано. Зверніться до адміністратора."
       }
     }
   },
