@@ -12,9 +12,9 @@
     "terrikon_b2b_hero": {
       "type": "terrikon-b2b-hero",
       "settings": {
-        "badge": "Współpraca B2B",
-        "title": "Współpraca z TUR",
-        "description": "Marka TUR to nie tylko odzież, to cały świat idei, inspiracji i unikalnych kolekcji. Jesteśmy otwarci na współpracę z tymi, którzy podzielają nasze wartości i dążą do tworzenia czegoś nowego."
+        "badge": "B2B Cooperation",
+        "title": "Cooperation with TUR",
+        "description": "TUR is not just a brand; it's a whole universe of ideas, inspiration, and unique collections. We are open to collaboration with those who share our values and strive to create something new."
       }
     },
     "terrikon_b2b_formats": {
@@ -23,15 +23,15 @@
         "format_1": {
           "type": "format_card",
           "settings": {
-            "card_title": "Realizacja",
-            "items": "Stała dostępność | Podpisanie umowy | Indywidualne warunki | Dodatkowa treść | Wspólne akcje"
+            "card_title": "Implementation",
+            "items": "Constant availability | Contract signing | Individual terms | Additional content | Joint promotions"
           }
         },
         "format_2": {
           "type": "format_card",
           "settings": {
-            "card_title": "Zespół",
-            "items": "Indywidualne warunki | Dostawa lub odbiór osobisty"
+            "card_title": "Band",
+            "items": "Individual terms | Delivery or self-pickup"
           }
         }
       },
@@ -40,7 +40,7 @@
         "format_2"
       ],
       "settings": {
-        "title": "Formy współpracy i warunki"
+        "title": "Cooperation Formats and Terms"
       }
     },
     "terrikon_b2b_advantages": {
@@ -49,37 +49,37 @@
         "advantage_1": {
           "type": "advantage",
           "settings": {
-            "text": "Własna produkcja – elastyczne warunki"
+            "text": "In-house production – flexible terms"
           }
         },
         "advantage_2": {
           "type": "advantage",
           "settings": {
-            "text": "Szybka dostawa 10-14 dni do Europy"
+            "text": "Fast delivery 10-14 days"
           }
         },
         "advantage_3": {
           "type": "advantage",
           "settings": {
-            "text": "Aktualny, nietuzinkowy design"
+            "text": "Current, unconventional design"
           }
         },
         "advantage_4": {
           "type": "advantage",
           "settings": {
-            "text": "Stała dostępność produktów"
+            "text": "Constant availability of products"
           }
         },
         "advantage_5": {
           "type": "advantage",
           "settings": {
-            "text": "Aktualizacja kolekcji 2 razy w sezonie"
+            "text": "Collection updates twice per season"
           }
         },
         "advantage_6": {
           "type": "advantage",
           "settings": {
-            "text": "Branding dla partnerów"
+            "text": "Branding for partners"
           }
         }
       },
@@ -92,7 +92,7 @@
         "advantage_6"
       ],
       "settings": {
-        "title": "Zalety współpracy z TUR"
+        "title": "Advantages of cooperating with TUR"
       }
     },
     "terrikon_b2b_metrics": {
@@ -102,21 +102,21 @@
           "type": "metric",
           "settings": {
             "number": "40+",
-            "description": "Partnerzy w Europie"
+            "description": "Partners in Europe"
           }
         },
         "metric_2": {
           "type": "metric",
           "settings": {
-            "number": "Ponad 9 lat",
-            "description": "Doświadczenie w szyciu skomplikowanych modeli"
+            "number": "9+ years",
+            "description": "Experience in sewing complex designs"
           }
         },
         "metric_3": {
           "type": "metric",
           "settings": {
             "number": "265 km / 185+",
-            "description": "Tkaniny i modele w produkcji"
+            "description": "Fabrics and designs in production"
           }
         }
       },
@@ -126,34 +126,34 @@
         "metric_3"
       ],
       "settings": {
-        "title": "Nasze doświadczenie"
+        "title": "Our experience"
       }
     },
     "terrikon_b2b_contact": {
       "type": "terrikon-b2b-contact",
       "settings": {
-        "title": "Kontakty i zapytanie o współpracę",
+        "title": "Contacts and collaboration request",
         "email": "tur.cooperation@gmail.com",
         "telegram": "TUR_saless",
         "instagram": "tur_cooperation",
         "wordpress_endpoint": "https://turwear.com/wp-json/shopify-keycrm/v1/submit-form",
-        "label_name": "Ваше ім'я",
-        "placeholder_name": "Іван Петренко",
+        "label_name": "Your name",
+        "placeholder_name": "Ivan Petrenko",
         "label_email": "E-mail",
         "placeholder_email": "ivan@example.com",
-        "label_phone": "Телефон",
-        "placeholder_phone": "+380501234567",
-        "label_cooperation": "Формат співпраці",
-        "placeholder_cooperation": "Оберіть формат",
-        "label_comment": "Коментар",
-        "placeholder_comment": "Опишіть ваш запит...",
-        "cooperation_options": "Реалізація\nГурт\nДропшипінг\nКорпоративний мерч\nЩе не визначився(лась)",
-        "button_text": "Відправити запит",
-        "button_sending": "Відправка...",
-        "message_success": "Дякуємо! Ваш запит успішно відправлено.",
-        "message_error": "Помилка відправки",
-        "message_error_network": "Помилка. Спробуйте пізніше.",
-        "error_no_endpoint": "Endpoint не налаштовано. Зверніться до адміністратора."
+        "label_phone": "Phone",
+        "placeholder_phone": "+1 202 555 0147",
+        "label_cooperation": "Cooperation format",
+        "placeholder_cooperation": "Choose the format",
+        "label_comment": "Comment",
+        "placeholder_comment": "Describe your request...",
+        "cooperation_options": "Implementation\nBand\nDropshipping\nCorporate merch\nStill undecided",
+        "button_text": "Send request",
+        "button_sending": "Sending...",
+        "message_success": "Thank you! Your request has been successfully sent.",
+        "message_error": "Sending error",
+        "message_error_network": "Error. Please try again later.",
+        "error_no_endpoint": "Endpoint is not configured. Please contact the administrator."
       }
     }
   },
