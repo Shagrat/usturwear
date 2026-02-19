@@ -31,13 +31,13 @@
         "block_1": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/Baner_zhin_deskop.png",
-            "mobile_image": "shopify://shop_images/Baner_mob_zhin_7.png",
+            "image": "shopify://shop_images/Baner_deskop_3.webp",
+            "mobile_image": "shopify://shop_images/Baner_mob_3.webp",
             "color_scheme": "dark",
-            "heading": "TOTAL SALE",
+            "heading": "New spring collection",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "https://turwear.tech/collections/oferty-specjalne?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.sex=Woman",
+            "button_link": "shopify://collections/nowe-produkty",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
