@@ -474,7 +474,7 @@
       ></script>
     {%- endif -%}
 
-{% unless template == 'index' or  template == '404' %}
+{% unless template == 'index' or template == '404' %}
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -483,38 +483,38 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Główna",
-      "item": "{{ shop.url }}"
-    },
-    {%- if template == 'collection' -%}
+      "name": {{ "Główna" | json }},
+      "item": {{ shop.url | json }}
+    }
+    {%- if template == 'collection' -%},
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{ collection.title }}",
-        "item": "{{ shop.url }}{{ collection.url }}"
+        "name": {{ collection.title | strip_html | json }},
+        "item": {{ shop.url | append: collection.url | json }}
       }
     {%- elsif template == 'product' -%}
-      {% if collection %}
+      {% if collection %},
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{ collection.title }}",
-        "item": "{{ shop.url }}{{ collection.url }}"
-      },
-      {% endif %}
+        "name": {{ collection.title | strip_html | json }},
+        "item": {{ shop.url | append: collection.url | json }}
+      }
+      {% endif %},
       {
         "@type": "ListItem",
         "position": {% if collection %}3{% else %}2{% endif %},
-        "name": "{{ product.title }}",
-        "item": "{{ shop.url }}{{ product.url }}"
+        "name": {{ product.title | strip_html | json }},
+        "item": {{ shop.url | append: product.url | json }}
       }
-	{%- else -%}	  
-	{
-	  "@type": "ListItem",
-	  "position": 2,
-	  "name": "{{ page.title }}",
-	  "item": "{{ shop.url }}{{ request.path }}"
-	}
+    {%- else -%},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | strip_html | json }},
+      "item": {{ shop.url | append: request.path | json }}
+    }
     {%- endif -%}
   ]
 }
