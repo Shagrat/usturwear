@@ -1,6 +1,6 @@
 <div class="header__logo__wrapper">
 	{%- if request.page_type == 'index' -%}
-		<h1 class="header__heading h4">
+		<div class="header__heading h4">
 	{%- endif -%}
 		<a href="{{ routes.root_url }}" class="header__heading header__logo full-unstyled-link" aria-label="{{ shop.name }}">
 			{%- if section.settings.logo != blank -%}
@@ -34,6 +34,6 @@
 			{%- endif -%}
 		</a>
 	{%- if request.page_type == 'index' -%}
-		</h1>
+	</div>
 	{%- endif -%}
 </div>
