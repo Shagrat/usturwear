@@ -44,16 +44,16 @@
             "collection": "koszule-i-kimona-dla-mezczyzn"
           }
         },
-        "categories_XjQVPW": {
-          "type": "categories",
-          "settings": {
-            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn"
-          }
-        },
         "categories_LcYMVT": {
           "type": "categories",
           "settings": {
             "collection": "koszulki-dla-mezczyzn"
+          }
+        },
+        "categories_XjQVPW": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn"
           }
         }
       },
@@ -62,8 +62,8 @@
         "categories_GHxWkt",
         "categories_hhDQHd",
         "categories_j7pGqw",
-        "categories_XjQVPW",
-        "categories_LcYMVT"
+        "categories_LcYMVT",
+        "categories_XjQVPW"
       ],
       "settings": {
         "color_scheme": "color-background-1",
