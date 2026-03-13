@@ -122,13 +122,6 @@
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_7.png"
           }
         },
-        "categories_XjQVPW": {
-          "type": "categories",
-          "settings": {
-            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_8.png"
-          }
-        },
         "categories_GPjCCa": {
           "type": "categories",
           "settings": {
@@ -150,18 +143,25 @@
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_11.png"
           }
         },
-        "categories_YR8NBy": {
-          "type": "categories",
-          "settings": {
-            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_12.png"
-          }
-        },
         "categories_DjVWrY": {
           "type": "categories",
           "settings": {
             "collection": "kapelusze-ta-czapki",
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_13.png"
+          }
+        },
+        "categories_XjQVPW": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-zimowa-dla-mezczyzn",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_8.png"
+          }
+        },
+        "categories_YR8NBy": {
+          "type": "categories",
+          "settings": {
+            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_12.png"
           }
         }
       },
@@ -173,12 +173,12 @@
         "categories_j7pGqw",
         "categories_rUiyQ7",
         "categories_rRJEMb",
-        "categories_XjQVPW",
         "categories_GPjCCa",
         "categories_xt9NLW",
         "categories_LNC6ae",
-        "categories_YR8NBy",
-        "categories_DjVWrY"
+        "categories_DjVWrY",
+        "categories_XjQVPW",
+        "categories_YR8NBy"
       ],
       "settings": {
         "color_scheme": "color-background-1",
