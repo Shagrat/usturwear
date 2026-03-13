@@ -20,22 +20,22 @@
     "collection_grid_CMXNCR": {
       "type": "collection-grid",
       "blocks": {
-        "categories_Lc8EE8": {
-          "type": "categories",
-          "settings": {
-            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami"
-          }
-        },
         "categories_rjV9f9": {
           "type": "categories",
           "settings": {
             "collection": "kapelusze-ta-czapki"
           }
+        },
+        "categories_Lc8EE8": {
+          "type": "categories",
+          "settings": {
+            "collection": "czapki-i-kominiarki-z-nadrukami-i-haftami"
+          }
         }
       },
       "block_order": [
-        "categories_Lc8EE8",
-        "categories_rjV9f9"
+        "categories_rjV9f9",
+        "categories_Lc8EE8"
       ],
       "settings": {
         "color_scheme": "color-background-1",
