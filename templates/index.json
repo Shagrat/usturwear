@@ -496,9 +496,9 @@
         "marker_tfi3XC": {
           "type": "marker",
           "settings": {
-            "position_x": 90,
-            "position_y": 40,
-            "product": "body-kovra",
+            "position_x": 40,
+            "position_y": 24,
+            "product": "bomber-jacket-with-reflective-piping-astra",
             "show_secondary_image": false,
             "show_sku": false,
             "show_vendor": true,
@@ -508,9 +508,9 @@
         "marker_ETwqpF": {
           "type": "marker",
           "settings": {
-            "position_x": 65,
-            "position_y": 72,
-            "product": "spodnie-void",
+            "position_x": 59,
+            "position_y": 30,
+            "product": "jumpsuit-with-detachable-sleeves-and-cut-outs-nova",
             "show_secondary_image": false,
             "show_sku": false,
             "show_vendor": true,
@@ -520,9 +520,9 @@
         "marker_bjpEKK": {
           "type": "marker",
           "settings": {
-            "position_x": 90,
-            "position_y": 19,
-            "product": "czapka-urban-samurai-club",
+            "position_x": 54,
+            "position_y": 55,
+            "product": "system-paskow-na-biodra",
             "show_secondary_image": false,
             "show_sku": false,
             "show_vendor": true,
@@ -542,7 +542,7 @@
         "heading": "Create her own style",
         "button_label": "",
         "button_link": "",
-        "image": "shopify://shop_images/15_14c09e9c-87ff-41bd-9953-2a5d8bcd8b44.webp",
+        "image": "shopify://shop_images/2_3e2f2636-c98e-48af-8c03-dfccf6a73dbf.webp",
         "is_autoplay": true,
         "is_hover_stop_autoplay": true,
         "show_arrows": true,
