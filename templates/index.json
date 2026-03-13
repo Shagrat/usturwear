@@ -393,9 +393,9 @@
         "marker_Ehj6b3": {
           "type": "marker",
           "settings": {
-            "position_x": 50,
-            "position_y": 4,
-            "product": "czapka-samuraj",
+            "position_x": 62,
+            "position_y": 34,
+            "product": "oversized-hoodie-with-decorative-seams-raise",
             "show_secondary_image": true,
             "show_sku": false,
             "show_vendor": true,
@@ -405,9 +405,9 @@
         "marker_cRqBh7": {
           "type": "marker",
           "settings": {
-            "position_x": 52,
-            "position_y": 34,
-            "product": "longsleeve-z-nadrukami-takesha-2-0",
+            "position_x": 63,
+            "position_y": 60,
+            "product": "nylon-cargo-pants-bronson",
             "show_secondary_image": true,
             "show_sku": false,
             "show_vendor": true,
@@ -417,9 +417,9 @@
         "marker_kw9VRG": {
           "type": "marker",
           "settings": {
-            "position_x": 78,
-            "position_y": 44,
-            "product": "cargo-pants-royce",
+            "position_x": 72,
+            "position_y": 84,
+            "product": "buty-sportowe-sn-2402",
             "show_secondary_image": false,
             "show_sku": false,
             "show_vendor": true,
@@ -429,21 +429,9 @@
         "marker_W7yJ9t": {
           "type": "marker",
           "settings": {
-            "position_x": 66,
-            "position_y": 75,
-            "product": "buty-kronos",
-            "show_secondary_image": true,
-            "show_sku": false,
-            "show_vendor": true,
-            "show_desc": false
-          }
-        },
-        "marker_7hjKCy": {
-          "type": "marker",
-          "settings": {
-            "position_x": 17,
-            "position_y": 16,
-            "product": "plecak-pancerz",
+            "position_x": 60,
+            "position_y": 6,
+            "product": "japonski-kapelusz-kasa",
             "show_secondary_image": true,
             "show_sku": false,
             "show_vendor": true,
@@ -455,8 +443,7 @@
         "marker_Ehj6b3",
         "marker_cRqBh7",
         "marker_kw9VRG",
-        "marker_W7yJ9t",
-        "marker_7hjKCy"
+        "marker_W7yJ9t"
       ],
       "settings": {
         "color_scheme": "color-background-1",
@@ -464,7 +451,7 @@
         "heading": "Create his own style",
         "button_label": "",
         "button_link": "",
-        "image": "shopify://shop_images/14_78c8d412-fc8f-440a-827d-ac7f0cb01ca3.webp",
+        "image": "shopify://shop_images/1_fd0bb7e3-84a7-43a9-83a4-904a3c37c8f3.webp",
         "is_autoplay": true,
         "is_hover_stop_autoplay": true,
         "show_arrows": true,
