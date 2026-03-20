@@ -62,7 +62,6 @@
         },
         "slideshow_item_U7UKja": {
           "type": "slideshow_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IMG_6431.webp",
             "mobile_image": "shopify://shop_images/Baner_kargo_zhin_mob.webp",
@@ -79,15 +78,14 @@
         },
         "block_2": {
           "type": "slideshow_item",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Baner_deskop_aksesuar.webp",
-            "mobile_image": "shopify://shop_images/baner_mob_zhin_-1.webp",
+            "image": "shopify://shop_images/Baner_bodi_kombez.webp",
+            "mobile_image": "shopify://shop_images/new_drop_girls_2.webp",
             "color_scheme": "dark",
-            "heading": "1+1=3",
+            "heading": "Bodysuits and jumpsuits",
             "text": "",
             "button_label": "GO TO",
-            "button_link": "shopify://pages/accessories",
+            "button_link": "shopify://collections/body-dla-kobiet",
             "button_style": "primary",
             "button_arrow": true,
             "overlay_enable": true,
