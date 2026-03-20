@@ -62,6 +62,7 @@
         },
         "slideshow_item_U7UKja": {
           "type": "slideshow_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Baner_3.webp",
             "mobile_image": "shopify://shop_images/Baner_mob_chol_3be5da87-3cb2-4db4-bc42-12df5c1fdc6a.webp",
