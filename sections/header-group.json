@@ -14,6 +14,12 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_37xzHc": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p><a href=\"/collections/nowe-produkty\" title=\"New collection\">REBORN: URBAN CYBERIZATION - NEW DROP 2026</a></p>"
+          }
+        },
         "announcement_7FAwcC": {
           "type": "announcement",
           "name": "WINTER SALE – 60%",
@@ -37,6 +43,7 @@
         }
       },
       "block_order": [
+        "announcement_37xzHc",
         "announcement_7FAwcC",
         "announcement_XkcA8f",
         "announcement_NdijXG"
