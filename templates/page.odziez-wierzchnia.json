@@ -20,6 +20,24 @@
     "collection_grid_TfAgLj": {
       "type": "collection-grid",
       "blocks": {
+        "categories_LcYMVT": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszulki-dla-mezczyzn"
+          }
+        },
+        "categories_j7pGqw": {
+          "type": "categories",
+          "settings": {
+            "collection": "koszule-i-kimona-dla-mezczyzn"
+          }
+        },
+        "categories_hhDQHd": {
+          "type": "categories",
+          "settings": {
+            "collection": "swetry-bluzy-longsleeve-dla-mezczyzn"
+          }
+        },
         "categories_YKbrC8": {
           "type": "categories",
           "settings": {
@@ -32,24 +50,6 @@
             "collection": "odziez-wierzchnia-jesien-wiosna-dla-mezczyzn"
           }
         },
-        "categories_hhDQHd": {
-          "type": "categories",
-          "settings": {
-            "collection": "swetry-bluzy-longsleeve-dla-mezczyzn"
-          }
-        },
-        "categories_j7pGqw": {
-          "type": "categories",
-          "settings": {
-            "collection": "koszule-i-kimona-dla-mezczyzn"
-          }
-        },
-        "categories_LcYMVT": {
-          "type": "categories",
-          "settings": {
-            "collection": "koszulki-dla-mezczyzn"
-          }
-        },
         "categories_XjQVPW": {
           "type": "categories",
           "settings": {
@@ -58,11 +58,11 @@
         }
       },
       "block_order": [
+        "categories_LcYMVT",
+        "categories_j7pGqw",
+        "categories_hhDQHd",
         "categories_YKbrC8",
         "categories_GHxWkt",
-        "categories_hhDQHd",
-        "categories_j7pGqw",
-        "categories_LcYMVT",
         "categories_XjQVPW"
       ],
       "settings": {
