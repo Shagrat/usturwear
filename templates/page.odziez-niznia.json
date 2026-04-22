@@ -20,6 +20,12 @@
     "collection_grid_4rGHWH": {
       "type": "collection-grid",
       "blocks": {
+        "categories_PQDVAm": {
+          "type": "categories",
+          "settings": {
+            "collection": "szorty-dla-mezczyzn"
+          }
+        },
         "categories_YLtrzm": {
           "type": "categories",
           "settings": {
@@ -37,19 +43,13 @@
           "settings": {
             "collection": "spodnie-sportowe-dla-mezczyzn"
           }
-        },
-        "categories_PQDVAm": {
-          "type": "categories",
-          "settings": {
-            "collection": "szorty-dla-mezczyzn"
-          }
         }
       },
       "block_order": [
+        "categories_PQDVAm",
         "categories_YLtrzm",
         "categories_db3ePP",
-        "categories_RTJCb7",
-        "categories_PQDVAm"
+        "categories_RTJCb7"
       ],
       "settings": {
         "color_scheme": "color-background-1",
