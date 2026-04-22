@@ -332,9 +332,9 @@
     "featured_products_jpCwD6": {
       "type": "featured-products",
       "settings": {
-        "subheading": "New collection",
-        "heading": "Nocturnal by TUR",
-        "text": "<p>Clothing without limits</p>",
+        "subheading": "Best for summer",
+        "heading": "Functional techwear",
+        "text": "",
         "product_list": [
           "system-paskow",
           "system-paskow-na-biodra",
@@ -350,7 +350,7 @@
         "image_ratio": "portrait",
         "image_fit": "contain",
         "button_label": "Go to",
-        "button_link": "shopify://collections/nocturnal",
+        "button_link": "shopify://collections/harness-systems-and-vests",
         "button_style": "primary",
         "button_arrow": true,
         "padding_top": 50,
