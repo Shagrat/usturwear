@@ -20,22 +20,10 @@
     "collection_grid_4rGHWH": {
       "type": "collection-grid",
       "blocks": {
-        "categories_nk3VKR": {
+        "categories_Rzc9n7": {
           "type": "categories",
           "settings": {
-            "collection": "odziez-wierzchnia-dla-kobiet"
-          }
-        },
-        "categories_WPt3ea": {
-          "type": "categories",
-          "settings": {
-            "collection": "anoraks-and-windbreakers"
-          }
-        },
-        "categories_fTDnPg": {
-          "type": "categories",
-          "settings": {
-            "collection": "bluzy-dla-kobiet"
+            "collection": "koszulki-dla-kobiet"
           }
         },
         "categories_XW7Mwk": {
@@ -50,10 +38,22 @@
             "collection": "topy-i-longsleeve-dla-kobiet"
           }
         },
-        "categories_Rzc9n7": {
+        "categories_fTDnPg": {
           "type": "categories",
           "settings": {
-            "collection": "koszulki-dla-kobiet"
+            "collection": "bluzy-dla-kobiet"
+          }
+        },
+        "categories_WPt3ea": {
+          "type": "categories",
+          "settings": {
+            "collection": "anoraks-and-windbreakers"
+          }
+        },
+        "categories_nk3VKR": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-dla-kobiet"
           }
         },
         "categories_YGUnpk": {
@@ -64,12 +64,12 @@
         }
       },
       "block_order": [
-        "categories_nk3VKR",
-        "categories_WPt3ea",
-        "categories_fTDnPg",
+        "categories_Rzc9n7",
         "categories_XW7Mwk",
         "categories_LBn4P9",
-        "categories_Rzc9n7",
+        "categories_fTDnPg",
+        "categories_WPt3ea",
+        "categories_nk3VKR",
         "categories_YGUnpk"
       ],
       "settings": {
