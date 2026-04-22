@@ -39,6 +39,18 @@
             "collection": "spodnie-i-dzinsy-dla-kobiet"
           }
         },
+        "categories_QCwQ3X": {
+          "type": "categories",
+          "settings": {
+            "collection": "classic-pants"
+          }
+        },
+        "categories_3PdTEm": {
+          "type": "categories",
+          "settings": {
+            "collection": "jeans-and-sweatpants"
+          }
+        },
         "categories_J3gdDj": {
           "type": "categories",
           "settings": {
@@ -50,6 +62,8 @@
         "categories_9c3fpY",
         "categories_DLyQCw",
         "categories_VwWtya",
+        "categories_QCwQ3X",
+        "categories_3PdTEm",
         "categories_J3gdDj"
       ],
       "settings": {
