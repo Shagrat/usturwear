@@ -73,50 +73,11 @@
     "collection_grid_4rGHWH": {
       "type": "collection-grid",
       "blocks": {
-        "categories_VwWtya": {
-          "type": "categories",
-          "settings": {
-            "collection": "spodnie-i-dzinsy-dla-kobiet",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_17.png"
-          }
-        },
         "categories_mtahME": {
           "type": "categories",
           "settings": {
             "collection": "body-dla-kobiet",
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_16.png"
-          }
-        },
-        "categories_LBn4P9": {
-          "type": "categories",
-          "settings": {
-            "collection": "topy-i-longsleeve-dla-kobiet",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_18.png"
-          }
-        },
-        "categories_fTDnPg": {
-          "type": "categories",
-          "settings": {
-            "collection": "bluzy-dla-kobiet"
-          }
-        },
-        "categories_4GETBL": {
-          "type": "categories",
-          "settings": {
-            "collection": "anoraks-and-windbreakers"
-          }
-        },
-        "categories_nk3VKR": {
-          "type": "categories",
-          "settings": {
-            "collection": "odziez-wierzchnia-dla-kobiet"
-          }
-        },
-        "categories_XW7Mwk": {
-          "type": "categories",
-          "settings": {
-            "collection": "kimona-i-zestawy",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_19.png"
           }
         },
         "categories_9He3tC": {
@@ -126,6 +87,13 @@
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_22.png"
           }
         },
+        "categories_9c3fpY": {
+          "type": "categories",
+          "settings": {
+            "collection": "szorty-i-kolarki-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_21.png"
+          }
+        },
         "categories_Rzc9n7": {
           "type": "categories",
           "settings": {
@@ -133,11 +101,61 @@
             "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_20.png"
           }
         },
-        "categories_9c3fpY": {
+        "categories_VwWtya": {
           "type": "categories",
           "settings": {
-            "collection": "szorty-i-kolarki-dla-kobiet",
-            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_21.png"
+            "collection": "spodnie-i-dzinsy-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_17.png"
+          }
+        },
+        "categories_zHrWka": {
+          "type": "categories",
+          "settings": {
+            "collection": "classic-pants"
+          }
+        },
+        "categories_LBn4P9": {
+          "type": "categories",
+          "settings": {
+            "collection": "topy-i-longsleeve-dla-kobiet",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_18.png"
+          }
+        },
+        "categories_XW7Mwk": {
+          "type": "categories",
+          "settings": {
+            "collection": "kimona-i-zestawy",
+            "collection_image": "shopify://shop_images/Dizayn_bez_nazvi_19.png"
+          }
+        },
+        "categories_4GETBL": {
+          "type": "categories",
+          "settings": {
+            "collection": "anoraks-and-windbreakers"
+          }
+        },
+        "categories_fTDnPg": {
+          "type": "categories",
+          "settings": {
+            "collection": "bluzy-dla-kobiet"
+          }
+        },
+        "categories_fqJ8it": {
+          "type": "categories",
+          "settings": {
+            "collection": "jeans-and-sweatpants"
+          }
+        },
+        "categories_NhLDwH": {
+          "type": "categories",
+          "settings": {
+            "collection": "harness-systems-and-vests"
+          }
+        },
+        "categories_nk3VKR": {
+          "type": "categories",
+          "settings": {
+            "collection": "odziez-wierzchnia-dla-kobiet"
           }
         },
         "categories_Nndt7c": {
@@ -149,16 +167,19 @@
         }
       },
       "block_order": [
-        "categories_VwWtya",
         "categories_mtahME",
-        "categories_LBn4P9",
-        "categories_fTDnPg",
-        "categories_4GETBL",
-        "categories_nk3VKR",
-        "categories_XW7Mwk",
         "categories_9He3tC",
-        "categories_Rzc9n7",
         "categories_9c3fpY",
+        "categories_Rzc9n7",
+        "categories_VwWtya",
+        "categories_zHrWka",
+        "categories_LBn4P9",
+        "categories_XW7Mwk",
+        "categories_4GETBL",
+        "categories_fTDnPg",
+        "categories_fqJ8it",
+        "categories_NhLDwH",
+        "categories_nk3VKR",
         "categories_Nndt7c"
       ],
       "settings": {
